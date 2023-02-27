@@ -49,6 +49,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 40px;
 }
 
 main section {
@@ -101,6 +102,32 @@ main section {
 @media only screen and (max-width: 420px) {
   .h2-1 {
     display: none;
+  }
+  main {
+    margin-bottom: 100px;
+  }
+
+  .btn {
+    flex-direction: column;
+  }
+
+  .sign-up-btn {
+    margin-left: 0px;
+    margin-top: 10px;
+    width: 338px;
+  }
+
+  .sign-up-btn button {
+    width: 100%;
+  }
+
+  .log-in-btn {
+    margin-right: 0px;
+    width: 338px;
+  }
+
+  .log-in-btn button {
+    width: 100%;
   }
 }
 
