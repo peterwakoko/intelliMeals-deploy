@@ -100,6 +100,8 @@ form {
   .input-field {
     width: 360px;
     margin-bottom: 30px;
+    /* border: 1px solid red; */
+    padding: 10px;
   }
 
   .input-field input {
@@ -107,11 +109,19 @@ form {
     margin-right: 10px;
   }
 
-  label {
+  .label-1 {
     margin-left: 6px;
+    /* border: 1px solid red; */
+    margin-right: 50px;
+  }
+
+  .nxt-btn {
+    /* border: 1px solid red; */
+    width: 360px;
   }
 
   .nxt-btn button {
-    margin-right: 10px;
+    /* margin-right: 15px; */
+    width: 100%;
   }
 }
