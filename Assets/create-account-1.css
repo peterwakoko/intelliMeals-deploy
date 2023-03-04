@@ -57,21 +57,11 @@ form {
   /* border: 1px solid red; */
 }
 
-.input-field {
-  width: 400px;
-  margin-bottom: 20px;
-  /* border: 1px solid red; */
-  position: relative;
-}
-
 .input-field input {
-  position: absolute;
   padding: 10px;
   border-radius: 6px;
   border: 1px solid #ccc;
   box-shadow: inset;
-  right: 0;
-  margin-left: 40px;
   width: 250px;
 }
 
@@ -83,6 +73,7 @@ form {
 .nxt-btn {
   position: absolute;
   right: 0;
+  margin-top: 10px;
 }
 
 .nxt-btn button {
@@ -94,34 +85,4 @@ form {
   border-radius: 999px;
   width: 100px;
   opacity: 0.7;
-}
-
-@media only screen and (max-width: 420px) {
-  .input-field {
-    width: 360px;
-    margin-bottom: 30px;
-    /* border: 1px solid red; */
-    padding: 10px;
-  }
-
-  .input-field input {
-    width: 220px;
-    margin-right: 10px;
-  }
-
-  .label-1 {
-    margin-left: 6px;
-    /* border: 1px solid red; */
-    margin-right: 50px;
-  }
-
-  .nxt-btn {
-    /* border: 1px solid red; */
-    width: 360px;
-  }
-
-  .nxt-btn button {
-    /* margin-right: 15px; */
-    width: 100%;
-  }
 }
