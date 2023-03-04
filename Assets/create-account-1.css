@@ -99,9 +99,19 @@ form {
 @media only screen and (max-width: 420px) {
   .input-field {
     width: 360px;
+    margin-bottom: 30px;
   }
 
   .input-field input {
     width: 220px;
+    margin-right: 10px;
+  }
+
+  label {
+    margin-left: 6px;
+  }
+
+  .nxt-btn button {
+    margin-right: 10px;
   }
 }
