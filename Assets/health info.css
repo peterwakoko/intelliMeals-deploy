@@ -100,11 +100,11 @@ form {
 }
 
 input#pressure {
-  transform: scale(2.3);
+  transform: scale(1.5);
 }
 
 input#diabetes {
-  transform: scale(2.3);
+  transform: scale(1.5);
 }
 @media only screen and (max-width: 480px) {
   .nxt-btn {
