@@ -253,13 +253,13 @@ aside .food-category {
     border-radius: 9999px;
     height: 43px;
     margin-top: 6px;
-    width: 300px;
+    width: 200px;
     margin-bottom: 10px;
   }
 
   .mobile-search input {
     box-shadow: inset;
-    width: 200px;
+    width: 100px;
     padding: 6px;
     background-color: #fff;
     border-left: 1px solid #ccc;
