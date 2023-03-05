@@ -193,5 +193,91 @@ aside .food-category {
     margin: 20px;
     padding: 10px;
     color: #333;
+    /* border: 1px solid red; */
+    width: 100%;
+  }
+  .scrollmenu {
+    overflow: auto;
+    white-space: nowrap;
+  }
+
+  .scrollmenu button {
+    padding: 5px;
+    border: 1px solid #2da44e;
+    outline: none;
+    background: #fff;
+    color: #000;
+    border-radius: 16px;
+  }
+
+  .scrollmenu .selected {
+    background: #2da44e;
+    border: none;
+    color: #fff;
+    padding: 5px;
+    border-radius: 16px;
+    font-size: 0.8rem;
+  }
+
+  .foods {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .foods button {
+    padding: 5px;
+    margin: 6px;
+    border-radius: 10px;
+    border: 1px solid #2da44e;
+    outline: none;
+    background: #fff;
+    color: #2da44e;
+  }
+
+  .mobile-sign-up {
+    position: absolute;
+    padding: 10px;
+    color: #fff;
+    background: #2da44e;
+    border: none;
+    outline: none;
+    border-radius: 999px;
+    width: 80%;
+    margin-top: 10px;
+    opacity: 0.7;
+  }
+
+  .mobile-search {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 9999px;
+    height: 43px;
+    margin-top: 6px;
+    width: 300px;
+    margin-bottom: 10px;
+  }
+
+  .mobile-search input {
+    box-shadow: inset;
+    width: 200px;
+    padding: 6px;
+    background-color: #fff;
+    border-left: 1px solid #ccc;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    outline: none;
+    height: 41px;
+  }
+
+  .mobile-search input[type="search"] {
+    font-size: 0.7rem;
+  }
+
+  .fa-magnifying-glass {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #000;
+    font-size: 15px;
   }
 }
