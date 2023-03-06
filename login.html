@@ -50,7 +50,12 @@
             <label for="user_name" style="font-size: 13px"
               >Username or email address</label
             ><br />
-            <input type="text" id="user_name" name="user_name" />
+            <input
+              type="text"
+              id="user_name"
+              name="user_name"
+              onkeyup="validateUserName()"
+            />
           </div>
 
           <div>
@@ -67,7 +72,12 @@
                 >Forgot password?</a
               > </span
             ><br />
-            <input type="password" id="user_password" name="user_password" />
+            <input
+              type="password"
+              id="user_password"
+              name="user_password"
+              onkeyup="validateUserPassword()"
+            />
           </div>
 
           <div class="login-button">
@@ -91,5 +101,6 @@
         </button>
       </div>
     </main>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>

@@ -1,0 +1,23 @@
+var user_name = document.getElementById("user_name");
+var user_password = document.getElementById("user_password");
+
+function validateUserName() {
+  var user_name_value = document.getElementById("user_name").value;
+
+  if (user_name_value.length == 0) {
+    user_name.style.border = "2px solid red";
+    return false;
+  } else {
+    user_name.style.border = "2px solid #2da44e";
+  }
+}
+
+function validateUserPassword() {
+  var user_password_value = document.getElementById("user_password").value;
+  if (user_password_value.length == 0) {
+    user_password.style.border = "2px solid red";
+    return false;
+  } else {
+    user_password.style.border = "2px solid #2da44e";
+  }
+}
