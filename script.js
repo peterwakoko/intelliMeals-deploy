@@ -6,7 +6,7 @@ function validateUserName() {
   var user_name_value = document.getElementById("user_name").value;
 
   if (user_name_value.length == 0) {
-    user_name.style.border = "2px solid red";
+    user_name.style.border = "2px solid #2da44e";
     return false;
   } else {
     user_name.style.border = "2px solid #2da44e";
@@ -16,9 +16,7 @@ function validateUserName() {
 function validateUserPassword() {
   var user_password_value = document.getElementById("user_password").value;
   if (user_password_value.length == 0) {
-    user_password.style.border = "2px solid red";
     login_btn.style.opacity = "0.7";
-
     return false;
   } else {
     user_password.style.border = "2px solid #2da44e";
