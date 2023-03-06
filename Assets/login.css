@@ -87,8 +87,12 @@ input {
   border-radius: 6px;
   border: 1px solid #ccc;
   box-shadow: inset;
+  outline: none;
 }
 
+input[type="text"]:focus {
+  border: 2px solid #2da44e;
+}
 .login-button button {
   padding: 10px;
   width: 100%;
