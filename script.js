@@ -17,6 +17,8 @@ function validateUserPassword() {
   var user_password_value = document.getElementById("user_password").value;
   if (user_password_value.length == 0) {
     user_password.style.border = "2px solid red";
+    login_btn.style.opacity = "0.7";
+
     return false;
   } else {
     user_password.style.border = "2px solid #2da44e";
