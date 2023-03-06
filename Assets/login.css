@@ -90,9 +90,10 @@ input {
   outline: none;
 }
 
-input[type="text"]:focus {
+input:focus {
   border: 2px solid #2da44e;
 }
+
 .login-button button {
   padding: 10px;
   width: 100%;
