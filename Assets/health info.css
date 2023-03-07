@@ -49,7 +49,6 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 70px;
 }
 
 form {
@@ -114,5 +113,13 @@ input#diabetes {
   .nxt-btn button {
     width: 100%;
     margin-top: 20px;
+  }
+
+  img {
+    width: 70px;
+  }
+
+  main {
+    margin-bottom: 200px;
   }
 }
