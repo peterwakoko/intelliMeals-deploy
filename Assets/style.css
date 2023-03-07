@@ -129,6 +129,10 @@ main section {
   .log-in-btn button {
     width: 100%;
   }
+
+  img {
+    width: 70px;
+  }
 }
 
 @media only screen and (min-width: 420px) {
