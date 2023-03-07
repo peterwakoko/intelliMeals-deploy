@@ -193,9 +193,10 @@ aside .food-category {
     margin: 20px;
     padding: 10px;
     color: #333;
-    /* border: 1px solid red; */
+    margin-bottom: 200px;
     width: 100%;
   }
+
   .scrollmenu {
     overflow: auto;
     white-space: nowrap;
