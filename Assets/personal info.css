@@ -49,12 +49,10 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 70px;
 }
 
 form {
   position: relative;
-  /* border: 1px solid red; */
 }
 
 .input-container {
@@ -131,5 +129,13 @@ form {
 
   .nxt-btn button {
     width: 100%;
+  }
+
+  img {
+    width: 70px;
+  }
+
+  main {
+    margin-bottom: 200px;
   }
 }
