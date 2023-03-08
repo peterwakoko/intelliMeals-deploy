@@ -60,17 +60,16 @@ header {
 
 nav {
   grid-area: navbar;
-  height: 100vh;
+  height: 594px;
 }
 
 main {
   grid-area: content;
-  height: 100vh;
+  height: 594px;
 }
 
 ul {
   list-style: none;
-  /* margin-top: 90px; */
   padding-left: 40px;
   padding-top: 20px;
 }
@@ -110,18 +109,117 @@ ul li:hover {
   top: 16px;
 }
 
-img {
+.logo {
   position: absolute;
-  left: 0;
+  left: 80px;
   top: 0;
-  border: 1px solid red;
 }
+
 main section {
-  /* border: 1px solid red; */
-  height: 500px;
+  height: 550px;
   background: #f6f8fa;
   margin-top: 20px;
   margin-left: 20px;
   margin-right: 20px;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.summary {
+  display: flex;
+  margin: 40px;
+  height: 200px;
+}
+
+.health-card {
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  width: 70%;
+  height: 100%;
+}
+
+.calories-card {
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  width: 30%;
+  margin-left: 10px;
+}
+
+.meal-card {
+  border: 1px solid #ccc;
+  background: #fff;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.meal-card-btn {
+  display: flex;
+  flex-direction: column;
+}
+
+.meal-card-btn button {
+  margin: 10px;
+  padding: 8px;
+  border-radius: 999px;
+  border: none;
+  outline: none;
+  background: #2da44e;
+  color: #fff;
+}
+
+.meal-container-inner {
+  display: flex;
+  justify-content: space-around;
+}
+
+.image-left {
+  display: flex;
+}
+
+figcaption {
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+.meal-photo {
+  width: 130px;
+  height: 130px;
+  margin-top: 20px;
+  background-image: url(./breakfast.jpeg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+.vertical-line-left {
+  border: 1px solid #f5f5f5;
+  position: absolute;
+  height: 100%;
+  left: 190px;
+}
+
+.health-card-inner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 150px;
+}
+
+.vertical-line-right {
+  border: 1px solid #f5f5f5;
+  position: absolute;
+  height: 100%;
+  right: 80px;
+}
+
+header i {
+  position: absolute;
+  right: 120px;
+  top: 26px;
 }

@@ -42,11 +42,17 @@
   <body>
     <header>
       <img
+        class="logo"
         src="./Assets/IntelliMeals logo .svg"
         alt="intelliMeals logo"
         width="70px"
       />
-      <h1>Home</h1>
+      <div class="vertical-line-left"></div>
+
+      <h2>Home</h2>
+      <i class="fa-sharp fa-regular fa-bell"></i>
+      <div class="vertical-line-right"></div>
+
       <div class="profile-image"></div>
     </header>
     <nav>
@@ -77,7 +83,45 @@
       </ul>
     </nav>
     <main>
-      <section></section>
+      <section>
+        <div class="summary">
+          <div class="health-card">
+            <h5 style="text-align: center">Health summary</h5>
+            <div class="health-card-inner">
+              <div class="card-left">
+                <p>Weight: 78kg</p>
+                <p>Height: 1.6m</p>
+              </div>
+              <div class="card-right">
+                <p>BMI</p>
+                <p>23.4</p>
+              </div>
+            </div>
+          </div>
+          <div class="calories-card">
+            <h5 style="text-align: center">Calories this week</h5>
+            <p>Total Calories: 235</p>
+          </div>
+        </div>
+        <div class="meal-card">
+          <h5 style="text-align: center">Today's Breakfast</h5>
+          <div class="meal-container-inner">
+            <figure class="image-left">
+              <div class="meal-photo"></div>
+              <figcaption>
+                Brown Coffee, <br />
+                Bread and Eggs
+              </figcaption>
+            </figure>
+
+            <div class="meal-card-btn">
+              <button>Today's Meal</button>
+              <button>Change</button>
+              <button>About Food</button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
