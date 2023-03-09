@@ -114,7 +114,6 @@ input[type="password"]:focus {
 }
 
 .options {
-  /* border: 1px solid red; */
   width: 320px;
 }
 
@@ -129,7 +128,6 @@ input[type="password"]:focus {
 }
 
 .google-logo {
-  /* border: 1px solid red; */
   height: 20px;
   width: 20px;
   border-radius: 50%;

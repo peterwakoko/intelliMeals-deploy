@@ -49,8 +49,9 @@
       />
       <div class="vertical-line-left"></div>
 
-      <h2>Home</h2>
+      <h4 class="title">Home</h4>
       <i class="fa-sharp fa-regular fa-bell"></i>
+      <div class="counter">2</div>
       <div class="vertical-line-right"></div>
 
       <div class="profile-image"></div>
@@ -58,7 +59,9 @@
     <nav>
       <ul>
         <li>
-          <a href="#"><i class="fa-solid fa-house-user"></i>Home</a>
+          <a href="#" class="active"
+            ><i class="fa-solid fa-house-user"></i>Home</a
+          >
         </li>
         <li>
           <a href="#"><i class="fa-solid fa-calendar-check"></i>Meal Plan</a>
@@ -86,21 +89,32 @@
       <section>
         <div class="summary">
           <div class="health-card">
-            <h5 style="text-align: center">Health summary</h5>
+            <h5>Health summary</h5>
             <div class="health-card-inner">
               <div class="card-left">
-                <p>Weight: 78kg</p>
-                <p>Height: 1.6m</p>
+                <p><span>Weight :</span> 78kg</p>
+                <p><span>Height :</span> 1.6m</p>
               </div>
               <div class="card-right">
-                <p>BMI</p>
-                <p>23.4</p>
+                <p class="bmi">BMI</p>
+                <p class="unit">23.4</p>
               </div>
             </div>
           </div>
           <div class="calories-card">
-            <h5 style="text-align: center">Calories this week</h5>
-            <p>Total Calories: 235</p>
+            <h5>Calories this week</h5>
+            <div
+              style="
+                width: 100%;
+                height: 200px;
+                display: flex;
+                justify-content: center;
+              "
+            >
+              <canvas id="myChart"></canvas>
+            </div>
+
+            <p><span>Total Calories:</span> 235 Cal.</p>
           </div>
         </div>
         <div class="meal-card">
@@ -123,5 +137,32 @@
         </div>
       </section>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+      const ctx = document.getElementById("myChart");
+
+      new Chart(ctx, {
+        type: "pie",
+        data: {
+          labels: ["Proteins", "Carbohydrates", "Fats", "Vitamins"],
+          datasets: [
+            {
+              label: "Calories",
+              data: [120, 400, 60, 112],
+              backgroundColor: "#2da44e",
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      });
+    </script>
   </body>
 </html>
