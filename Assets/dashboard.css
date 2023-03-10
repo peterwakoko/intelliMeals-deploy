@@ -533,23 +533,23 @@ header i {
   header i {
     position: absolute;
     right: 95px;
-    top: 19px;
-    font-size: 28px;
+    top: 25px;
+    font-size: 20px;
   }
 
   .counter {
     position: absolute;
     border: none;
     outline: none;
-    height: 20px;
-    width: 20px;
+    height: 18px;
+    width: 18px;
     border-radius: 100%;
     text-align: center;
     background-color: red;
     color: #fff;
-    right: 98px;
+    right: 95px;
     font-size: 13px;
-    top: 7px;
+    top: 16px;
   }
 
   .title {
