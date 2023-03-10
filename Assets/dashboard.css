@@ -526,4 +526,19 @@ header i {
     padding-bottom: 50px;
     padding-top: 30px;
   }
+
+  .logo {
+    position: absolute;
+    left: 20px;
+    top: -8px;
+  }
+
+  .vertical-line-left {
+    border: 1px solid #ccc;
+    position: absolute;
+    height: 70%;
+    left: 100px;
+    border-left: none;
+    top: 10px;
+  }
 }
