@@ -578,12 +578,16 @@ header i {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40px;
+    height: 60px;
   }
 
   .footer-nav a {
     margin-left: 30px;
     color: #5f5d5d;
+  }
+
+  .footer-nav i {
+    /* font-size: 1.3rem; */
   }
 
   .mobile-logout {
