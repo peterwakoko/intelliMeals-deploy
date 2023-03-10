@@ -517,7 +517,7 @@ header i {
 
   .logo {
     position: absolute;
-    left: 20px;
+    left: 3px;
     top: -8px;
   }
 
@@ -525,14 +525,14 @@ header i {
     border: 1px solid #ccc;
     position: absolute;
     height: 70%;
-    left: 100px;
+    left: 74px;
     border-left: none;
     top: 10px;
   }
 
   header i {
     position: absolute;
-    right: 100px;
+    right: 95px;
     top: 19px;
     font-size: 28px;
   }
@@ -547,7 +547,7 @@ header i {
     text-align: center;
     background-color: red;
     color: #fff;
-    right: 103px;
+    right: 98px;
     font-size: 13px;
     top: 7px;
   }
@@ -556,5 +556,14 @@ header i {
     margin-top: 20px;
     font-size: 0.9rem;
     font-weight: 500;
+  }
+
+  .vertical-line-right {
+    border: 1px solid #ccc;
+    position: absolute;
+    height: 70%;
+    right: 70px;
+    top: 10px;
+    border-left: none;
   }
 }
