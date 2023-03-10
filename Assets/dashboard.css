@@ -585,4 +585,8 @@ header i {
     margin-left: 30px;
     color: #5f5d5d;
   }
+
+  .mobile-logout {
+    margin-right: 30px;
+  }
 }
