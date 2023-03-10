@@ -378,3 +378,150 @@ header i {
     transform: translate3d(-50%, -50%, 0) rotate(360deg);
   }
 }
+
+@media only screen and (min-width: 908px) {
+  .meal-card-btn-set2 {
+    display: none;
+  }
+  .figcaption-set2 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 908px) {
+  .nav-label {
+    display: none;
+  }
+  .figcaption-set2 {
+    font-size: 0.7rem;
+    padding: 10px;
+  }
+
+  .meal-card {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  figcaption {
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .meal-container-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .meal-card-btn {
+    display: none;
+  }
+
+  .image-left {
+    display: unset;
+  }
+
+  .meal-card-btn-set2 {
+    display: block;
+    margin: 10px;
+  }
+  .meal-card-btn-set2 button {
+    border-radius: 999px;
+    padding: 3px;
+    border: none;
+    outline: none;
+    background: #2da44e;
+    color: #fff;
+    font-size: 0.6rem;
+  }
+
+  figcaption {
+    display: none;
+  }
+
+  .meal-photo {
+    width: 160px;
+    height: 160px;
+    background-image: url(./breakfast.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+  }
+
+  .summary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px 40px 10px 40px;
+    height: 800px;
+    /* border: 1px solid red; */
+    width: 100%;
+  }
+
+  .health-card {
+    border: 1px solid #ccc;
+    width: 100%;
+    margin: 10px;
+    height: 270px;
+    background: #fff;
+  }
+
+  .calories-card {
+    /* border: 1px solid blue; */
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .health-card-inner {
+    /* height: 130px; */
+    /* border: 1px solid blue; */
+  }
+
+  nav {
+    /* display: none; */
+    overflow: hidden;
+  }
+
+  main {
+    border-left: 0;
+    /* border: 1px solid red; */
+    margin-right: 5px;
+    border-right: none;
+  }
+
+  body {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "navbar content";
+    grid-template-columns: 0.1fr 4fr;
+    width: 100%;
+    height: 100vh;
+  }
+
+  ul i {
+    margin-right: 10px;
+    margin-left: 0;
+    color: #5f5d5d;
+    font-size: 1rem;
+  }
+
+  ul li {
+    margin: 0px;
+    padding: 10px;
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    height: 1030px;
+  }
+}
