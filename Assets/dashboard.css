@@ -551,4 +551,10 @@ header i {
     font-size: 13px;
     top: 7px;
   }
+
+  .title {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
 }
