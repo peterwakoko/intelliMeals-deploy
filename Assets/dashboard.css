@@ -312,7 +312,7 @@ figcaption {
 }
 
 .vertical-line-left {
-  border: 1px solid #ccc;
+  border: 1px solid #f5f5f5;
   position: absolute;
   height: 70%;
   left: 190px;
@@ -325,7 +325,7 @@ figcaption {
 }
 
 .vertical-line-right {
-  border: 1px solid #ccc;
+  border: 1px solid #f5f5f5;
   position: absolute;
   height: 70%;
   right: 80px;
@@ -382,6 +382,10 @@ header i {
     display: none;
   }
   .figcaption-set2 {
+    display: none;
+  }
+
+  .footer-nav {
     display: none;
   }
 }
@@ -522,7 +526,7 @@ header i {
   }
 
   .vertical-line-left {
-    border: 1px solid #ccc;
+    border: 1px solid #f5f5f5;
     position: absolute;
     height: 70%;
     left: 74px;
@@ -559,7 +563,7 @@ header i {
   }
 
   .vertical-line-right {
-    border: 1px solid #ccc;
+    border: 1px solid #f5f5f5;
     position: absolute;
     height: 70%;
     right: 70px;
