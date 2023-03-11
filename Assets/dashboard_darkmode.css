@@ -416,8 +416,6 @@ header i {
     padding: 0;
     margin-bottom: 20px;
     width: 100%;
-    /* border: 1px solid red; */
-    height: 700px;
   }
 
   figcaption {
@@ -448,9 +446,15 @@ header i {
     border-radius: 999px;
     padding: 3px;
     border: none;
-    outline: none;
     color: #fff;
     font-size: 0.6rem;
+    background: #202124;
+    border: 1px solid #4f5050;
+  }
+
+  .meal-card-btn-set2 button:hover {
+    background: #35363a;
+    cursor: pointer;
   }
 
   figcaption {
@@ -500,7 +504,7 @@ header i {
     border-left: 0;
     margin-right: 5px;
     border-right: none;
-    height: 902px;
+    height: 950px;
   }
 
   body {
@@ -529,12 +533,11 @@ header i {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 820px;
+    height: 866px;
     padding-left: 5px;
     padding-right: 5px;
     padding-bottom: 50px;
     padding-top: 30px;
-    /* border: 1px solid red; */
   }
 
   .logo {

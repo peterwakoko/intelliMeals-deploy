@@ -429,6 +429,7 @@ header i {
   .meal-card-btn-set2 {
     display: block;
     margin: 10px;
+    border: 1px solid blue;
   }
   .meal-card-btn-set2 button {
     border-radius: 999px;
@@ -484,6 +485,8 @@ header i {
     border-left: 0;
     margin-right: 5px;
     border-right: none;
+    height: 945px;
+    border: 1px solid red;
   }
 
   body {
