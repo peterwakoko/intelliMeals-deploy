@@ -204,7 +204,7 @@ ul li:hover {
   background-size: cover;
   position: absolute;
   right: 10px;
-  top: 10px;
+  top: 0.6rem;
 }
 
 .counter {
@@ -432,7 +432,7 @@ header i {
   }
   .meal-card-btn-set2 button {
     border-radius: 999px;
-    padding: 3px;
+    padding: 5px;
     border: none;
     outline: none;
     background: #2da44e;
@@ -537,9 +537,9 @@ header i {
 
   header i {
     position: absolute;
-    right: 95px;
-    top: 25px;
-    font-size: 20px;
+    right: 162px;
+    top: 18px;
+    font-size: 1.5rem;
   }
 
   .counter {
@@ -552,15 +552,16 @@ header i {
     text-align: center;
     background-color: red;
     color: #fff;
-    right: 95px;
+    right: 159px;
     font-size: 13px;
-    top: 16px;
+    top: 12px;
   }
 
   .title {
     margin-top: 20px;
     font-size: 0.9rem;
     font-weight: 500;
+    margin-right: 120px;
   }
 
   .vertical-line-right {
@@ -587,11 +588,26 @@ header i {
   }
 
   .footer-nav a {
-    margin-left: 30px;
+    margin-left: 40px;
     color: #5f5d5d;
+    font-size: 1.5rem;
   }
 
   .mobile-logout {
     margin-right: 30px;
+  }
+
+  .fa-gear {
+    position: absolute;
+    top: 17px;
+    right: 105px;
+    font-size: 1.5rem;
+  }
+
+  .fa-magnifying-glass-chart {
+    position: absolute;
+    top: 17px;
+    right: 69px;
+    font-size: 1.5rem;
   }
 }

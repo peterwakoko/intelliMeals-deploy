@@ -444,7 +444,7 @@ header i {
   }
   .meal-card-btn-set2 button {
     border-radius: 999px;
-    padding: 3px;
+    padding: 5px;
     border: none;
     color: #fff;
     font-size: 0.6rem;
@@ -557,9 +557,10 @@ header i {
 
   header i {
     position: absolute;
-    right: 95px;
-    top: 25px;
-    font-size: 20px;
+    right: 162px;
+    top: 18px;
+    font-size: 1.5rem;
+    color: #bdc1c6;
   }
 
   .counter {
@@ -572,15 +573,16 @@ header i {
     text-align: center;
     background-color: red;
     color: #fff;
-    right: 95px;
+    right: 159px;
     font-size: 13px;
-    top: 16px;
+    top: 12px;
   }
 
   .title {
     margin-top: 20px;
     font-size: 0.9rem;
     font-weight: 500;
+    margin-right: 120px;
   }
 
   .vertical-line-right {
@@ -609,6 +611,7 @@ header i {
   .footer-nav a {
     margin-left: 30px;
     color: #bdc1c6;
+    font-size: 1.5rem;
   }
 
   .mobile-logout {
@@ -617,5 +620,21 @@ header i {
 
   .active {
     color: #fff;
+  }
+
+  .fa-gear {
+    position: absolute;
+    top: 17px;
+    right: 109px;
+    font-size: 1.5rem;
+    color: #bdc1c6;
+  }
+
+  .fa-magnifying-glass-chart {
+    position: absolute;
+    top: 17px;
+    right: 69px;
+    font-size: 1.5rem;
+    color: #bdc1c6;
   }
 }
