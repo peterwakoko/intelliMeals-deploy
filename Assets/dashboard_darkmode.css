@@ -331,9 +331,6 @@ figcaption {
 }
 
 .health-card-inner {
-  /* display: flex; */
-  /* justify-content: space-around; */
-  /* align-items: center; */
   height: 250px;
 }
 
@@ -419,6 +416,8 @@ header i {
     padding: 0;
     margin-bottom: 20px;
     width: 100%;
+    /* border: 1px solid red; */
+    height: 700px;
   }
 
   figcaption {
@@ -501,6 +500,8 @@ header i {
     border-left: 0;
     margin-right: 5px;
     border-right: none;
+    border: 1px solid red;
+    height: 902px;
   }
 
   body {
@@ -529,11 +530,12 @@ header i {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 867px;
+    height: 820px;
     padding-left: 5px;
     padding-right: 5px;
     padding-bottom: 50px;
     padding-top: 30px;
+    /* border: 1px solid red; */
   }
 
   .logo {
