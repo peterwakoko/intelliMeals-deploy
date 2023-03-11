@@ -368,7 +368,7 @@ header i {
 }
 
 .loader {
-  border: solid 3px rgb(66, 66, 66);
+  border: solid 3px #99cdee;
   border-bottom-color: #1c87c9;
   border-radius: 50%;
   height: 40px;
