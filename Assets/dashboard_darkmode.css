@@ -231,6 +231,22 @@ ul li:hover {
   font-size: 18px;
 }
 
+#sun-icon {
+  position: absolute;
+  color: #bdc1c6;
+  top: 11px;
+  right: 130px;
+  font-size: 18px;
+}
+
+#logout-icon {
+  position: absolute;
+  color: #bdc1c6;
+  top: 11px;
+  right: 130px;
+  font-size: 18px;
+}
+
 .dropdown-content {
   display: none;
   position: absolute;
@@ -558,20 +574,10 @@ header i {
 
   main {
     border-left: 0;
-    /* margin-right: -0.9px; */
     border-right: none;
     height: 950px;
-    margin-right: -1px;
+    /* margin-right: -1px; */
   }
-
-  /* header {
-    grid-area: header;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    height: 60px;
-    margin-right: -2px;
-  } */
 
   body {
     display: grid;
