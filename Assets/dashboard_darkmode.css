@@ -558,7 +558,7 @@ header i {
 
   main {
     border-left: 0;
-    margin-right: 5px;
+    /* margin-right: 5px; */
     border-right: none;
     height: 950px;
   }
@@ -613,7 +613,7 @@ header i {
 
   header i {
     position: absolute;
-    right: 162px;
+    right: 97px;
     top: 18px;
     font-size: 1.5rem;
     color: #bdc1c6;
@@ -629,17 +629,17 @@ header i {
     text-align: center;
     background-color: red;
     color: #fff;
-    right: 159px;
+    right: 99px;
     font-size: 13px;
     top: 12px;
   }
 
-  .title {
+  /* .title {
     margin-top: 20px;
     font-size: 0.9rem;
     font-weight: 500;
     margin-right: 120px;
-  }
+  } */
 
   .vertical-line-right {
     border: 1px solid #4f5050;
@@ -659,15 +659,14 @@ header i {
     background: #202124;
     height: 60px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     height: 54px;
   }
 
   .footer-nav a {
-    margin-left: 40px;
     color: #bdc1c6;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .mobile-logout {
@@ -686,13 +685,13 @@ header i {
     color: #bdc1c6;
   } */
 
-  .fa-magnifying-glass-chart {
+  /* .fa-magnifying-glass-chart {
     position: absolute;
     top: 17px;
     right: 69px;
     font-size: 1.5rem;
     color: #bdc1c6;
-  }
+  } */
 
   .profile-drop-down {
     border: 1px solid red;
