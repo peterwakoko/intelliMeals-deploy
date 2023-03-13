@@ -558,9 +558,18 @@ header i {
 
   main {
     border-left: 0;
-    margin-right: -0.7px;
+    /* margin-right: -0.9px; */
     border-right: none;
     height: 950px;
+  }
+
+  header {
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 60px;
+    margin-right: -2px;
   }
 
   body {
