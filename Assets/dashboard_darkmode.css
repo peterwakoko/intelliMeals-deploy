@@ -214,12 +214,16 @@ ul li:hover {
 #settings-icon {
   position: absolute;
   color: #bdc1c6;
-  top: 56px;
+  top: 59px;
   right: 130px;
   font-size: 18px;
 }
 
 .setting-text {
+  margin-left: -20px;
+}
+
+.log-out-text {
   margin-left: -20px;
 }
 
@@ -234,7 +238,7 @@ ul li:hover {
 #sun-icon {
   position: absolute;
   color: #bdc1c6;
-  top: 11px;
+  top: 104px;
   right: 130px;
   font-size: 18px;
 }
@@ -242,7 +246,7 @@ ul li:hover {
 #logout-icon {
   position: absolute;
   color: #bdc1c6;
-  top: 11px;
+  top: 151px;
   right: 130px;
   font-size: 18px;
 }
@@ -277,6 +281,14 @@ ul li:hover {
 }
 
 .user {
+  border-bottom: 1px solid #4f5050;
+}
+
+.settings-item {
+  border-bottom: 1px solid #4f5050;
+}
+
+.light-mode-item {
   border-bottom: 1px solid #4f5050;
 }
 
