@@ -58,7 +58,16 @@
       <div class="counter">2</div>
       <div class="vertical-line-right"></div>
 
-      <div class="profile-image"></div>
+      <button onclick="myFunction()" class="profile-image"></button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#user_profile" class="user"
+          ><i class="fa-regular fa-user" id="user-icon"></i>User profile</a
+        >
+        <a href="#settings"
+          ><i class="fa-solid fa-gear" id="settings-icon"></i
+          ><span class="setting-text">Settings</span>
+        </a>
+      </div>
     </header>
     <nav>
       <ul>
@@ -195,6 +204,26 @@
           },
         },
       });
+
+      /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function (event) {
+        if (!event.target.matches(".profile-image")) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
+            }
+          }
+        }
+      };
     </script>
     <script src="dashboard.js"></script>
   </body>

@@ -15,3 +15,9 @@ btn.addEventListener("click", () => {
     document.body.style.color = "#000";
   }
 });
+
+const profile_image = document.querySelector(".profile-image");
+const profile_drop_down = document.querySelector(".profile-drop-down");
+profile_image.addEventListener("click", () => {
+  profile_drop_down.style.display = "block";
+});
