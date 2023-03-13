@@ -96,11 +96,10 @@ body {
 }
 
 .card-top {
-  border: 1px solid #4f5050;
+  border-bottom: 1px solid #4f5050;
   padding: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
-  border-radius: 10px;
   background: #202124;
 }
 .card-top p {
@@ -118,7 +117,6 @@ body {
 }
 
 .card-bottom {
-  border: 1px solid #4f5050;
   padding: 10px;
   border-radius: 10px;
   background: #202124;
@@ -293,14 +291,12 @@ ul li:hover {
 
 main section {
   height: 600px;
-  /* background: #333333; */
   margin-top: 20px;
   margin-left: 20px;
   margin-right: 20px;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  /* border: 1px solid red; */
 }
 
 .summary {
