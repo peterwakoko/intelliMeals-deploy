@@ -170,12 +170,10 @@ ul {
   list-style: none;
   padding-left: 40px;
   padding-top: 20px;
-  margin-top: 70px;
+  margin-top: 30px;
 }
 
 ul li {
-  margin: 5px;
-  padding: 10px;
   margin-bottom: 50px;
 }
 
@@ -183,7 +181,6 @@ ul li a {
   text-decoration: none;
   color: #bdc1c6;
   font-size: 0.6rem;
-  /* border: 1px solid red; */
   padding: 10px;
   border-radius: 999px;
 }
@@ -416,12 +413,13 @@ figcaption {
 }
 
 .meal-photo {
-  width: 160px;
-  height: 160px;
+  width: 230px;
+  height: 180px;
   background-image: url(./breakfast.jpeg);
   background-position: center;
   background-size: cover;
   border-radius: 10px;
+  opacity: 0.85;
 }
 
 .vertical-line-left {
@@ -503,7 +501,7 @@ header i {
     display: none;
   }
 }
-@media only screen and (max-width: 1090px) {
+@media only screen and (max-width: 908px) {
   .nav-label {
     display: none;
   }
@@ -689,12 +687,13 @@ header i {
   }
 
   .vertical-line-right {
-    border: 1px solid #4f5050;
+    /* border: 1px solid #4f5050;
     position: absolute;
     height: 70%;
     right: 70px;
     top: 10px;
-    border-left: none;
+    border-left: none; */
+    display: none;
   }
 
   .footer-nav {
@@ -786,4 +785,13 @@ header i {
     right: 130px;
     font-size: 0.8rem;
   } */
+
+  .username {
+    display: none;
+  }
+
+  .profile-image {
+    right: 10px;
+    top: 10px;
+  }
 }

@@ -169,12 +169,10 @@ ul {
   list-style: none;
   padding-left: 40px;
   padding-top: 20px;
-  margin-top: 70px;
+  margin-top: 30px;
 }
 
 ul li {
-  margin: 5px;
-  padding: 10px;
   margin-bottom: 50px;
 }
 
@@ -409,12 +407,13 @@ figcaption {
 }
 
 .meal-photo {
-  width: 160px;
-  height: 160px;
+  width: 230px;
+  height: 180px;
   background-image: url(./breakfast.jpeg);
   background-position: center;
   background-size: cover;
   border-radius: 10px;
+  opacity: 0.85;
 }
 
 .vertical-line-left {
@@ -644,7 +643,7 @@ header i {
 
   header i {
     position: absolute;
-    right: 162px;
+    right: 97px;
     top: 18px;
     font-size: 1.5rem;
   }
@@ -659,25 +658,23 @@ header i {
     text-align: center;
     background-color: red;
     color: #fff;
-    right: 159px;
+    right: 99px;
     font-size: 13px;
     top: 12px;
   }
 
   .title {
-    margin-top: 20px;
-    font-size: 0.9rem;
-    font-weight: 500;
-    margin-right: 120px;
+    margin-top: 18px;
   }
 
   .vertical-line-right {
-    border: 1px solid #f5f5f5;
+    /* border: 1px solid #f5f5f5;
     position: absolute;
     height: 70%;
     right: 70px;
     top: 10px;
-    border-left: none;
+    border-left: none; */
+    display: none;
   }
 
   .footer-nav {
@@ -689,13 +686,13 @@ header i {
     background: #fff;
     height: 60px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     height: 54px;
   }
 
   .footer-nav a {
-    margin-left: 40px;
+    /* margin-left: 40px; */
     color: #5f5d5d;
     font-size: 1.5rem;
   }
@@ -711,10 +708,19 @@ header i {
     font-size: 1.5rem;
   }
 
-  .fa-magnifying-glass-chart {
+  /* .fa-magnifying-glass-chart {
     position: absolute;
     top: 17px;
     right: 69px;
     font-size: 1.5rem;
+  } */
+
+  .username {
+    display: none;
+  }
+
+  .profile-image {
+    right: 10px;
+    top: 10px;
   }
 }
