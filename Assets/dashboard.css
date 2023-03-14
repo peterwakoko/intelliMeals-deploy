@@ -93,11 +93,11 @@ body {
 }
 
 .card-top {
-  border: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
   padding: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   background: #fff;
 }
 
@@ -115,7 +115,7 @@ body {
 }
 
 .card-bottom {
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
   padding: 10px;
   border-radius: 10px;
   background: #fff;
@@ -137,7 +137,7 @@ body {
 
 nav,
 main {
-  border: 1px solid #f5f5f5;
+  border: 0.5px solid #f0efef;
   border-bottom: none;
 }
 
@@ -158,6 +158,7 @@ nav {
 main {
   grid-area: content;
   height: 100vh;
+  border-right: none;
 }
 .fa-house-user {
   font-weight: bold;
@@ -168,17 +169,21 @@ ul {
   list-style: none;
   padding-left: 40px;
   padding-top: 20px;
+  margin-top: 70px;
 }
 
 ul li {
   margin: 5px;
   padding: 10px;
+  margin-bottom: 50px;
 }
 
 ul li a {
   text-decoration: none;
   color: #363636;
   font-size: 0.6rem;
+  padding: 10px;
+  border-radius: 999px;
 }
 
 ul i {
@@ -187,8 +192,8 @@ ul i {
   font-size: 0.8rem;
 }
 
-ul li:hover {
-  background-color: #f6f8fa;
+ul li a:hover {
+  background: #e0e7ee;
   border-radius: 9999px;
   cursor: default;
   padding: 10px;
@@ -203,8 +208,109 @@ ul li:hover {
   background-position: center;
   background-size: cover;
   position: absolute;
-  right: 10px;
-  top: 0.6rem;
+  right: 125px;
+  top: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.username {
+  position: absolute;
+  right: 0;
+  top: 18px;
+  /* border: 1px solid red; */
+  white-space: nowrap;
+  width: 119px;
+  height: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.5rem;
+}
+
+#settings-icon {
+  position: absolute;
+  color: #5f5d5d;
+  top: 59px;
+  right: 130px;
+  font-size: 18px;
+}
+
+.setting-text {
+  margin-left: -20px;
+}
+
+.log-out-text {
+  margin-left: -20px;
+}
+
+#user-icon {
+  position: absolute;
+  color: #5f5d5d;
+  top: 11px;
+  right: 130px;
+  font-size: 18px;
+}
+
+#sun-icon {
+  position: absolute;
+  color: #5f5d5d;
+  top: 104px;
+  right: 130px;
+  font-size: 18px;
+}
+
+#logout-icon {
+  position: absolute;
+  color: #5f5d5d;
+  top: 151px;
+  right: 130px;
+  font-size: 18px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: 0;
+  top: 62px;
+  border-radius: 10px;
+  border: none;
+}
+
+.dropdown-content a {
+  color: #000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.dropdown-content a:hover {
+  background: #e0e7ee;
+}
+
+.user {
+  border-bottom: 1px solid #d6d4d4;
+}
+
+.settings-item {
+  border-bottom: 1px solid #d6d4d4;
+}
+
+.light-mode-item {
+  border-bottom: 1px solid #d6d4d4;
+}
+
+.show {
+  display: block;
 }
 
 .counter {
@@ -217,9 +323,9 @@ ul li:hover {
   text-align: center;
   background-color: red;
   color: #fff;
-  right: 123px;
+  right: 210px;
   font-size: 13px;
-  top: 7px;
+  top: 10px;
 }
 
 .logo {
@@ -230,7 +336,7 @@ ul li:hover {
 
 main section {
   height: 600px;
-  background: #f6f8fa;
+  /* background: #f6f8fa; */
   margin-top: 20px;
   margin-left: 20px;
   margin-right: 20px;
@@ -312,7 +418,7 @@ figcaption {
 }
 
 .vertical-line-left {
-  border: 1px solid #f5f5f5;
+  border: 0.5px solid #e4e2e2;
   position: absolute;
   height: 70%;
   left: 190px;
@@ -325,17 +431,17 @@ figcaption {
 }
 
 .vertical-line-right {
-  border: 1px solid #f5f5f5;
+  border: 0.5px solid #e4e2e2;
   position: absolute;
   height: 70%;
-  right: 80px;
-  top: 10px;
+  right: 190px;
   border-left: none;
+  top: 10px;
 }
 
 header i {
   position: absolute;
-  right: 120px;
+  right: 207px;
   top: 19px;
   font-size: 28px;
 }
