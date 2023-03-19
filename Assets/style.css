@@ -94,11 +94,20 @@ img {
 @media only screen and (max-width: 480px) {
   .caption-1 {
     color: #fff;
-    margin-left: 20px;
+    margin-left: 10px;
     letter-spacing: 2px;
     font-size: 1rem;
     padding: 10px;
     margin-top: 70px;
     font-weight: 900;
+  }
+
+  .caption-2 {
+    float: right;
+    font-weight: lighter;
+    color: #cec9c9;
+    letter-spacing: 2px;
+    padding: 10px;
+    margin-top: 20px;
   }
 }
