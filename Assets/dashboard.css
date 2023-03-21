@@ -329,8 +329,7 @@ ul li a:hover {
   display: flex;
   justify-content: center;
   position: relative;
-  height: 80px;
-  /* border: 1px solid red; */
+  height: 60px;
   width: 100%;
 }
 
@@ -369,10 +368,8 @@ ul li a:hover {
 
 .container-template {
   display: flex;
-  /* border: 1px solid red; */
   background-color: hsl(200, 20%, 95%);
   animation: skeleton-loading 1s infinite alternate;
-
   height: 100vh;
 }
 
@@ -395,13 +392,12 @@ ul li a:hover {
 
 .logo {
   position: absolute;
-  left: 80px;
-  top: -8px;
+  left: 30px;
+  top: 5px;
 }
 
 main section {
   height: 600px;
-  /* background: #f6f8fa; */
   margin-top: 20px;
   margin-left: 20px;
   margin-right: 20px;
@@ -517,8 +513,6 @@ header i {
   width: 100%;
   height: 100vh;
   z-index: 100;
-  /* display: flex; */
-  /* flex-direction: column; */
   position: fixed;
 }
 
@@ -695,14 +689,15 @@ header i {
   .logo {
     position: absolute;
     left: 3px;
-    top: -8px;
+    top: 6px;
+    width: 100px;
   }
 
   .vertical-line-left {
     border: 1px solid #f5f5f5;
     position: absolute;
     height: 70%;
-    left: 74px;
+    left: 120px;
     border-left: none;
     top: 10px;
   }

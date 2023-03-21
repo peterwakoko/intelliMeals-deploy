@@ -10,7 +10,7 @@
       rel="stylesheet"
     />
 
-    <link rel="icon" href="./Assets/IntelliMeals logo .svg" />
+    <link rel="icon" href="./Assets/SUPA meal planner - Copy.svg" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -41,15 +41,26 @@
   </head>
   <body>
     <div class="preloader">
-      <div class="loader"></div>
-      <span class="msg">Please wait...</span>
+      <div class="header-template">
+        <img
+          class="logo-skeleton"
+          src="./Assets/SUPA meal planner.svg"
+          alt="intelliMeals logo"
+          width="140px"
+        />
+        <div class="profile-skeleton"></div>
+        <div class="profile-text"></div>
+        <div class="notification-skeleton"></div>
+      </div>
+
+      <div class="container-template"></div>
     </div>
     <header>
       <img
         class="logo"
-        src="./Assets/IntelliMeals Logo Darkmode.svg"
+        src="./Assets/SUPA meal planner.svg"
         alt="intelliMeals logo"
-        width="70px"
+        width="110px"
       />
       <div class="vertical-line-left"></div>
 
@@ -96,19 +107,6 @@
             ><i class="fa-solid fa-magnifying-glass-chart"></i>Food Analysis</a
           >
         </li>
-        <!-- <li>
-          <a href="#"><i class="fa-solid fa-gear"></i>Settings</a>
-        </li> -->
-        <!-- <li>
-          <a href="dashboard.html"
-            ><i class="fa-regular fa-sun"></i>Light Mode</a
-          >
-        </li> -->
-        <!-- <li>
-          <a href="index.html"
-            ><i class="fa-solid fa-right-from-bracket"></i>Log out</a
-          >
-        </li> -->
       </ul>
     </nav>
     <main>
@@ -179,13 +177,6 @@
       <a href="#"><i class="fa-solid fa-clock-rotate-left"></i> </a>
 
       <a href="#"><i class="fa-solid fa-magnifying-glass-chart"></i> </a>
-
-      <!-- <a href="#"><i class="fa-solid fa-gear"></i> </a> -->
-
-      <!-- <a href="dashboard.html"><i class="fa-regular fa-sun"></i> </a> -->
-      <!-- <a href="index.html" class="mobile-logout"
-        ><i class="fa-solid fa-right-from-bracket"></i
-      ></a> -->
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -214,7 +205,7 @@
         },
       });
 
-      /* When the user clicks on the button, 
+      /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
       function myFunction() {
         document.getElementById("myDropdown").classList.toggle("show");
