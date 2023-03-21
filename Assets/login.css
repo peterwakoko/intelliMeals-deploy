@@ -145,3 +145,12 @@ input[type="password"]:focus {
 .sign-in-text {
   margin-top: 3px;
 }
+@media only screen and (max-width: 480px) {
+  .nxt-btn {
+    width: 300px;
+  }
+
+  main {
+    margin-bottom: 140px;
+  }
+}
