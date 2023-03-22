@@ -218,7 +218,6 @@ ul li a:hover {
   position: absolute;
   right: 0;
   top: 18px;
-  /* border: 1px solid red; */
   color: white;
   white-space: nowrap;
   width: 119px;
@@ -424,12 +423,35 @@ main section {
   border: 1px solid #4f5050;
 }
 
+.bmi-status {
+  border: 1px solid #4f5050;
+  background: #202124;
+  padding: 10px;
+  border-radius: 10px;
+  width: 30%;
+  margin-left: 10px;
+}
+
+th {
+  font-size: 0.79rem;
+  font-weight: 500;
+  text-align: center;
+  color: #e8eaed;
+}
+td {
+  font-size: 0.6rem;
+  padding: 12px;
+  font-weight: 300;
+  color: #e8eaed;
+  text-align: center;
+}
+
 .calories-card {
   border: 1px solid #4f5050;
   background: #202124;
   padding: 10px;
   border-radius: 10px;
-  width: 70%;
+  width: 40%;
   margin-left: 10px;
 }
 
