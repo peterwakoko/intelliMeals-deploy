@@ -581,10 +581,12 @@ header i {
   }
 
   .meal-card {
-    margin-left: 0;
+    margin-left: 0px;
     margin-right: 0;
+    margin-top: 35px;
+    /* border: 1px solid red; */
     padding: 0;
-    margin-bottom: 20px;
+    margin-bottom: 2px;
     width: 100%;
   }
 
@@ -640,7 +642,7 @@ header i {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 30px 40px 10px 40px;
+    margin: -43px 40px 10px 40px;
     height: 800px;
     width: 100%;
   }
@@ -651,6 +653,20 @@ header i {
     margin: 10px;
     height: 270px;
     background: #fff;
+  }
+
+  .bmi-status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    width: 100%;
+    margin-left: 0px;
+    margin: 10px;
   }
 
   .calories-card {
@@ -666,7 +682,7 @@ header i {
     border-left: 0;
     margin-right: 5px;
     border-right: none;
-    height: 945px;
+    height: 1040px;
   }
 
   body {
@@ -695,7 +711,7 @@ header i {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 867px;
+    height: 1245px;
     padding-left: 5px;
     padding-right: 5px;
     padding-bottom: 50px;

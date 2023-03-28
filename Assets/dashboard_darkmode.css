@@ -592,10 +592,12 @@ header i {
   }
 
   .meal-card {
-    margin-left: 0;
+    margin-left: 0px;
     margin-right: 0;
+    margin-top: 35px;
+    /* border: 1px solid red; */
     padding: 0;
-    margin-bottom: 20px;
+    margin-bottom: 2px;
     width: 100%;
   }
 
@@ -656,24 +658,40 @@ header i {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 30px 40px 10px 40px;
+    margin: -43px 40px 10px 40px;
     height: 800px;
     width: 100%;
+    /* border: 1px solid red; */
   }
 
   .health-card {
     width: 100%;
+    /* margin-top: -70px; */
     margin: 10px;
+    /* margin-left: 0; */
     height: 270px;
-
     background: #202124;
     padding: 10px;
     border-radius: 10px;
+    /* border: 1px solid #4f5050; */
+  }
+
+  .bmi-status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid #4f5050;
+    background: #202124;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    margin-left: 0px;
+    margin: 10px;
   }
 
   .calories-card {
     width: 100%;
+    margin-top: 20px;
     margin-left: 0;
   }
 
@@ -684,7 +702,7 @@ header i {
   main {
     border-left: 0;
     border-right: none;
-    height: 950px;
+    height: 1040px;
   }
 
   body {
@@ -713,7 +731,7 @@ header i {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 866px;
+    height: 1245px;
     padding-left: 5px;
     padding-right: 5px;
     padding-bottom: 50px;
