@@ -78,8 +78,10 @@ form {
   margin-top: 10px;
 }
 
-.nxt-btn button {
+.nxt-btn a {
   padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
   color: #fff;
   background: #2da44e;
   border: none;
@@ -87,6 +89,8 @@ form {
   border-radius: 999px;
   width: 100px;
   opacity: 0.7;
+  text-decoration: none;
+  font-size: 0.6rem;
 }
 
 .birth_date {
@@ -130,15 +134,14 @@ img {
 @media only screen and (max-width: 480px) {
   .nxt-btn {
     width: 300px;
+    margin-right: -8px;
+    margin-top: 20px;
   }
 
-  .nxt-btn button {
-    width: 100%;
+  .nxt-btn a {
+    padding-left: 130px;
+    padding-right: 130px;
   }
-
-  /* img {
-    width: 70px;
-  } */
 
   main {
     margin-bottom: 140px;
