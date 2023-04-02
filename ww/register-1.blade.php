@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./Assets/health info.css" />
+    <link rel="stylesheet" href="./Assets/account info.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
       rel="stylesheet"
@@ -36,7 +36,7 @@
       content="https://intelli-meals-deploy.vercel.app/Assets/restaurantchef.jpg"
     />
 
-    <title>Health Info|Step 3</title>
+    <title>Account Info|Step 1</title>
   </head>
   <body>
     <main>
@@ -47,7 +47,7 @@
       />
       <nav style="position: absolute; left: 0; top: 10px">
         <a
-          href="personal info.html"
+          href="index.html"
           style="
             font-size: 13px;
             text-decoration: none;
@@ -55,66 +55,51 @@
             margin-left: 20px;
             font-weight: 700;
           "
-          ><i class="fa-sharp fa-solid fa-arrow-left"></i>Step 3 of 4</a
+          ><i class="fa-sharp fa-solid fa-arrow-left"></i>Step 1 of 4</a
         >
       </nav>
 
       <section>
         <h3 style="font-weight: 600; font-size: 1rem">Create your account</h3>
       </section>
-      <p style="font-size: 0.8rem; margin-bottom: 10px">Health Information</p>
+      <p style="font-size: 0.8rem; margin-bottom: 10px">Account Information</p>
       <form action="" method="post">
         <section class="input-container">
           <div class="input-field">
-            <label for="user_weight" style="font-size: 13px">Weight:</label
-            ><br />
-            <input type="number" id="user_weight" name="user_weight" min="1" />
+            <label for="user_email" style="font-size: 13px">Email:</label><br />
+            <input type="email" id="user_email" name="user_email" />
           </div>
 
           <div class="input-field">
-            <label for="user_height" style="font-size: 13px">Height:</label
+            <label for="user_re-type_email" style="font-size: 13px"
+              >Re-type Email:</label
             ><br />
-            <input type="number" id="user_height" name="user_height" min="1" />
+            <input
+              type="email"
+              id="user_re-type_email"
+              name="user_re-type_email"
+            />
           </div>
 
-          <!-- <div class="condition">
-            <label for="user_condition" style="font-size: 13px"
-              >Condition(NCD):</label
+          <div class="input-field">
+            <label for="user_password" style="font-size: 13px">Password:</label
             ><br />
-            <label for="diabetes" style="font-size: 13px">
-              <span>Diabetes</span> <input type="checkbox" id="diabetes" />
-            </label>
-            <label for="pressure" style="font-size: 13px">
-              <span>Pressure</span> <input type="checkbox" id="pressure" />
-            </label>
-          </div> -->
+            <input type="password" id="user_password" name="user_password" />
+          </div>
 
-          <!-- <div class="condition">
-            <label for="user_condition" style="font-size: 13px"
-              >What food allergies do you have?</label
+          <div class="input-field">
+            <label for="user_re-type_password" style="font-size: 13px"
+              >Re-type Password:</label
             ><br />
-            <label for="diabetes" style="font-size: 13px">
-              <span>Meat</span> <input type="checkbox" id="diabetes" />
-            </label>
-            <label for="pressure" style="font-size: 13px">
-              <span>Cow's milk</span> <input type="checkbox" id="pressure" />
-            </label>
-            <label for="pressure" style="font-size: 13px">
-              <span>Soya</span> <input type="checkbox" id="pressure" /> </label
-            ><br />
-            <label for="diabetes" style="font-size: 13px">
-              <span>Fish</span> <input type="checkbox" id="diabetes" />
-            </label>
-            <label for="pressure" style="font-size: 13px">
-              <span>Wheat</span> <input type="checkbox" id="pressure" />
-            </label>
-            <label for="pressure" style="font-size: 13px">
-              <span>Peanuts</span> <input type="checkbox" id="pressure" />
-            </label>
-          </div> -->
+            <input
+              type="password"
+              id="user_re-type_password"
+              name="user_re-type_password"
+            />
+          </div>
 
           <div class="nxt-btn">
-            <a href="food select.html">Next</a>
+            <a href="personal info.html">Next</a>
           </div>
         </section>
       </form>

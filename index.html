@@ -14,6 +14,13 @@
       name="description"
       content="intellieals is a web based application that offers you food suggestions,timely reminders and nutrition literature."
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="intelliMeals" />
     <meta
@@ -35,9 +42,15 @@
     <div class="container">
       <header>
         <img src="./Assets/SUPA meal planner.svg" alt="" width="130px" />
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
         <nav>
-          <a href="#">About</a> <a href="#">Features</a>
-          <a href="#">Dev Team</a> <a href="login.html">Login</a>
+          <a href="#about">About Us</a> <a href="#features">Features</a>
+          <a href="#dev-team">Dev Team</a> <a href="#contact">Contact Us</a>
+          <a href="login.html">Login</a>
           <a href="account info.html">Signup</a>
         </nav>
       </header>
@@ -55,32 +68,172 @@
         </div>
       </main>
     </div>
-    <section class="about">
+    <section class="about" id="about">
       <div class="about-text">
-        <h3>About Us</h3>
+        <h1>About Us</h1>
         <p>
           Welcome to our diet and nutrition management system! We are a team of
-          dedicated professionals who are passionate about helping people
-          achieve their health and wellness goals through proper nutrition. Our
-          system is designed to provide users with the tools and resources they
-          need to manage their diet and nutrition in a simple, easy-to-use way.
-          Whether you're looking to lose weight, gain muscle, or simply eat
-          healthier, our system is here to help. Our team consists of nutrition
-          experts, software developers, and customer support specialists who
-          work together to provide our users with the best possible experience.
-          We are committed to providing the most up-to-date and accurate
-          information on nutrition, and we regularly update our system to
-          reflect the latest research and trends. At our core, we believe that
-          nutrition is the foundation of good health, and we are dedicated to
-          helping people make positive changes in their lives through better
-          nutrition. We understand that everyone's needs are different, and we
-          strive to provide personalized support to each and every one of our
-          users. Thank you for choosing our diet and nutrition management
-          system. We look forward to helping you achieve your health and
-          wellness goals!
+          dedicated students who are passionate about helping people achieve
+          their health and wellness goals through proper nutrition.
+        </p>
+        <p>
+          Our system is designed to provide users with the tools and resources
+          they need to manage their diet and nutrition in a simple, easy-to-use
+          way.
         </p>
       </div>
+
       <div class="about-img"></div>
     </section>
+    <section class="time-line" id="time-line">
+      <div class="meal-time-line">
+        <div class="time-line-inner">
+          <ul>
+            <li>Today</li>
+            <li>Tuesday</li>
+            <li>Wednesday</li>
+            <li>Thursday</li>
+            <li>Friday</li>
+            <li>Saturday</li>
+            <li>Sunday</li>
+          </ul>
+        </div>
+      </div>
+      <div class="feature-text">
+        <h1>Meals for a week.</h1>
+        <p>
+          Plan your meals in advance to help you stay on track with your
+          nutrition goals, save time and reduce food waste.
+        </p>
+        <p>
+          You start by identifying the foods you enjoy and want to include in
+          your diet. Then this list is used to create a list of meals for the
+          week, taking into account your nutritional needs.
+        </p>
+        <p>
+          Once the weekly meal plan is created, users can use it as a guide for
+          grocery shopping and meal preparation for the week. This can help to
+          reduce the likelihood of impulsive food purchases and increase the
+          chances of sticking to their nutrition plan.
+        </p>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="about-img2"></div>
+      <div class="about-text2">
+        <h1>Better meals,Better health</h1>
+        <p>
+          Eating a balanced and nutritious diet can help to reduce the risk of
+          chronic diseases, such as heart disease, diabetes, and certain types
+          of cancer. It can also improve mood, energy levels, and cognitive
+          function.
+        </p>
+        <p>
+          Better meals can include a variety of whole, nutrient-dense foods,
+          such as fruits, vegetables, whole grains, lean proteins, and healthy
+          fats. These foods are rich in essential nutrients that our bodies need
+          to function properly.
+        </p>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <h1>Features</h1>
+      <div class="feature-container">
+        <div>
+          <i class="fa-solid fa-face-smile"></i><br />
+          <h3>Food Suggestions</h3>
+          Food suggestion provides personalized recommendations based on the
+          user's dietary needs and preferences.
+        </div>
+        <div>
+          <i class="fa-solid fa-book-open"></i><br />
+          <h3>Nutrition literature</h3>
+          Nutrition literature provides valuable information on the science of
+          nutrition, dietary guidelines, and healthy eating practices.
+        </div>
+        <div>
+          <i class="fa-solid fa-mobile"></i><br />
+          <h3>Responsive</h3>
+          The application can be accessed and used effectively across a range of
+          devices, including desktops, tablets, and mobile phones.
+        </div>
+      </div>
+
+      <div class="feature-container">
+        <div>
+          <i class="fa-solid fa-wallet"></i><br />
+          <h3>Affordable</h3>
+          The system is accessible to a wide range of users. It is free and
+          available on a number of devices.
+        </div>
+        <div>
+          <i class="fa-solid fa-clock"></i> <br />
+          <h3>Timely reminder</h3>
+          Reminders help users stay on track with their nutrition goals by
+          reminding them to eat at the right time.
+        </div>
+        <div>
+          <i class="fa-solid fa-magnifying-glass"></i><br />
+          <h3>Food analysis</h3>
+          Food analysis allows users to track and analyze the nutritional
+          content of their food intake.
+        </div>
+      </div>
+    </section>
+    <section class="dev-team" id="dev-team">
+      <h1>Dev Team</h1>
+      <div class="dev-cards">
+        <div class="card">
+          <div class="dev-1"></div>
+          <p>Sensy</p>
+          <p>Backend Developer</p>
+        </div>
+
+        <div class="card">
+          <div class="dev-2"></div>
+          <p>Peter</p>
+          <p>Backend Developer</p>
+        </div>
+
+        <div class="card">
+          <div class="dev-3"></div>
+          <p>Victor</p>
+          <p>Frontend developer</p>
+        </div>
+
+        <div class="card">
+          <div class="dev-4"></div>
+          <p>Rachael</p>
+          <p>Frontend Developer</p>
+        </div>
+
+        <div class="card">
+          <div class="dev-5"></div>
+          <p>Simon</p>
+          <p>Frontend Developer</p>
+        </div>
+      </div>
+      <p>
+        "Your code has the power to change lives. Use it to make a difference in
+        the world and leave a lasting impact on the lives of those who use it."
+      </p>
+    </section>
+    <footer id="contact">
+      <div>
+        <small>&copy;2023 SUPA meal planner, Inc.</small>
+        <small>Terms</small>
+        <small>Privacy</small>
+      </div>
+
+      <div>
+        <a href=""><i class="fa-brands fa-github"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-discord"></i></a>
+      </div>
+    </footer>
+    <a href="#" class="to-top"><i class="fa-solid fa-angle-up"></i></a>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>

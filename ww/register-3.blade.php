@@ -77,7 +77,7 @@
             <input type="number" id="user_height" name="user_height" min="1" />
           </div>
 
-          <!-- <div class="condition">
+          <div class="condition">
             <label for="user_condition" style="font-size: 13px"
               >Condition(NCD):</label
             ><br />
@@ -87,7 +87,7 @@
             <label for="pressure" style="font-size: 13px">
               <span>Pressure</span> <input type="checkbox" id="pressure" />
             </label>
-          </div> -->
+          </div>
 
           <!-- <div class="condition">
             <label for="user_condition" style="font-size: 13px"

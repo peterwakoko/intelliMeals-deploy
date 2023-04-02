@@ -3,6 +3,7 @@
 html {
   box-sizing: border-box;
   font-size: 18px;
+  scroll-behavior: smooth;
 }
 
 @media only screen and (min-width: 720px) {
@@ -49,7 +50,6 @@ html {
 header {
   height: 100px;
   width: 100%;
-  /* background: #f6f8fa; */
   display: flex;
   justify-content: end;
   align-items: center;
@@ -72,6 +72,24 @@ header a:hover {
 img {
   position: absolute;
   left: 20px;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
 }
 
 .caption-1 {
@@ -98,24 +116,261 @@ img {
   display: flex;
 }
 
+.about p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .about-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   width: 50%;
-  border: 1px solid red;
+  font-size: 1.2rem;
   height: 100vh;
   font-size: 0.8rem;
   background-color: #2da44e;
   color: #fff;
+  padding: 10px;
+  line-height: 1.5;
+}
+
+.about-text2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  font-size: 1.2rem;
+  height: 100vh;
+  font-size: 0.8rem;
+  background-color: #2da44e;
+  color: #fff;
+  padding: 10px;
+  line-height: 1.5;
 }
 
 .about-img {
   width: 50%;
   height: 100vh;
   background-image: url(./food-min.jpeg);
-  border: 1px solid red;
   background-position: center;
   background-size: cover;
 }
-@media only screen and (max-width: 480px) {
+
+.about-img2 {
+  width: 50%;
+  height: 100vh;
+  background-image: url(./food2.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
+.time-line {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.meal-time-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  font-size: 1.2rem;
+  height: 100vh;
+  padding: 60px;
+  line-height: 1.5;
+  background: #f6f8fa;
+}
+
+.meal-time-line ul {
+  margin-left: 22px;
+}
+
+.time-line-inner {
+  height: 100vh;
+  border-left: 1px solid #ccc;
+  /* border: 1px solid red; */
+}
+
+ul li {
+  margin-top: 20px;
+  color: #2da44e;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.card p {
+  /* border: 1px solid red; */
+  text-align: center;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* margin: 29px; */
+  background: #f6f8fa;
+  height: 100vh;
+  /* width: 100%; */
+}
+
+.feature-container {
+  display: flex;
+  font-size: 0.7rem;
+  padding: 20px;
+}
+
+.feature-container div {
+  /* padding: 10px; */
+  margin: 20px;
+}
+
+.feature-container i {
+  color: #2da44e;
+  font-size: 1.2rem;
+}
+
+.feature-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  height: 100vh;
+  font-size: 0.8rem;
+  /* padding: 10px; */
+  line-height: 1.5;
+  background: #f6f8fa;
+}
+
+.feature-text p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.dev-team {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #f6f8fa;
+}
+
+.dev-team p {
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+.dev-1 {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-image: url(./avatar.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.dev-2 {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-image: url(./Peter\ Kikomeko.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.dev-3 {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-image: url(./Muhumuza\ Victor.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.dev-4 {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-image: url(./Rechael\ Nambooze.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.dev-5 {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-image: url(./avatar.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.dev-cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer {
+  width: 100%;
+  height: 14vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #2da44e;
+  color: #fff;
+}
+
+footer small {
+  font-size: 0.6rem;
+  margin-left: 10px;
+}
+footer i {
+  color: #fff;
+  margin-left: 10px;
+}
+.to-top {
+  background: rgb(226, 224, 224);
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: #2da44e;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s;
+}
+
+.to-top.active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.to-top.active:hover {
+  background: #ccc;
+}
+
+@media only screen and (max-width: 720px) {
   .caption-1 {
     color: #fff;
     margin-left: 10px;
@@ -133,5 +388,37 @@ img {
     letter-spacing: 2px;
     padding: 10px;
     margin-top: 20px;
+  }
+
+  .about {
+    display: unset;
+  }
+
+  .about-img {
+    width: 100%;
+  }
+
+  .about-text {
+    width: 100%;
+  }
+
+  .about-text2 {
+    width: 100%;
+  }
+
+  .about-img2 {
+    width: 100%;
+  }
+
+  .feature-text {
+    width: 100%;
+  }
+
+  .time-line {
+    display: unset;
+  }
+
+  .meal-time-line {
+    width: 100%;
   }
 }
