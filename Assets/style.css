@@ -202,7 +202,7 @@ img {
 }
 
 .meal-time-line ul {
-  margin-left: 22px;
+  margin-left: 21px;
 }
 
 .time-line-inner {
@@ -286,6 +286,10 @@ ul li {
   align-items: center;
   justify-content: center;
   background: #f6f8fa;
+}
+
+.dev-name{
+  font-weight:600;
 }
 
 .dev-team p {
