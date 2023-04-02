@@ -132,8 +132,20 @@ img {
   font-size: 0.8rem;
   background-color: #2da44e;
   color: #fff;
-  padding: 10px;
+  padding: 60px;
   line-height: 1.5;
+}
+
+.about-text p {
+  padding: 10px;
+}
+
+.about-text h1 {
+  padding: 10px;
+}
+
+.about-text2 h1 {
+  padding: 10px;
 }
 
 .about-text2 {
@@ -146,8 +158,12 @@ img {
   font-size: 0.8rem;
   background-color: #2da44e;
   color: #fff;
-  padding: 10px;
+  padding: 60px;
   line-height: 1.5;
+}
+
+.about-text2 p {
+  padding: 10px;
 }
 
 .about-img {
@@ -193,6 +209,10 @@ img {
   height: 100vh;
   border-left: 1px solid #ccc;
   /* border: 1px solid red; */
+}
+
+.quote {
+  font-family: monospace;
 }
 
 ul li {
@@ -247,7 +267,7 @@ ul li {
   width: 50%;
   height: 100vh;
   font-size: 0.8rem;
-  /* padding: 10px; */
+  padding: 60px;
   line-height: 1.5;
   background: #f6f8fa;
 }
@@ -255,6 +275,7 @@ ul li {
 .feature-text p {
   margin-top: 10px;
   margin-bottom: 10px;
+  padding: 15px;
 }
 
 .dev-team {
@@ -270,6 +291,11 @@ ul li {
 .dev-team p {
   text-align: center;
   font-size: 0.7rem;
+  padding: 10px;
+}
+
+.card p {
+  font-weight: 700;
 }
 
 .dev-1 {
