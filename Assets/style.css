@@ -453,7 +453,7 @@ footer i {
   }
 
   .caption-1 {
-    display: none;
+    /* display: none; */
     color: #fff;
     margin-left: 10px;
     letter-spacing: 2px;
