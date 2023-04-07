@@ -1,6 +1,7 @@
 var user_name = document.getElementById("user_name");
 var user_password = document.getElementById("user_password");
 var login_btn = document.getElementById("login_btn");
+var caption_1 = document.getElementsByClassName("caption-1");
 
 function validateUserName() {
   var user_name_value = document.getElementById("user_name").value;
@@ -38,4 +39,12 @@ const navbarLinks = document.getElementsByClassName("navbar-links")[0];
 
 toggleButton.addEventListener("click", () => {
   navbarLinks.classList.toggle("active");
+});
+
+toggleButton.addEventListener("click", () => {
+  if (caption_1.style.display === "none") {
+    caption_1.style.display = "block";
+  } else {
+    caption_1.style.display = "none";
+  }
 });
