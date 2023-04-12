@@ -1,0 +1,459 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+html {
+  box-sizing: border-box;
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+
+@media only screen and (min-width: 720px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 1240px) {
+  html {
+    font-size: 24px;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.caption-1 {
+  position: absolute;
+  top: 210px;
+  color: #fff;
+  margin-left: 100px;
+  padding: 20px;
+}
+
+.caption-1 h1{
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-size: 1.9rem;
+}
+
+.caption-2 {
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  color: #cec9c9;
+  padding: 10px;
+  margin-top: -20px;
+}
+
+.caption-2 h4{
+  letter-spacing: 2px;
+  font-weight: lighter;
+  font-size: 1.3rem;
+}
+
+.about {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.about p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.about-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  font-size: 1.2rem;
+  height: 100vh;
+  font-size: 0.8rem;
+  background-color: #2da44e;
+  color: #fff;
+  padding: 60px;
+  line-height: 1.5;
+}
+
+.about-text p {
+  padding: 10px;
+}
+
+.about-text h1 {
+  padding: 10px;
+}
+
+.about-text2 h1 {
+  padding: 10px;
+}
+
+.about-text2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  font-size: 1.2rem;
+  height: 100vh;
+  font-size: 0.8rem;
+  background-color: #2da44e;
+  color: #fff;
+  padding: 60px;
+  line-height: 1.5;
+}
+
+.about-text2 p {
+  padding: 10px;
+}
+
+.about-img {
+  width: 50%;
+  height: 100vh;
+  background-image: url(./food-min.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
+.about-img2 {
+  width: 50%;
+  height: 100vh;
+  background-image: url(./food2.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
+.time-line {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.meal-time-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  font-size: 1.2rem;
+  height: 100vh;
+  padding: 60px;
+  line-height: 1.5;
+  background: #f6f8fa;
+}
+
+.meal-time-line ul {
+  margin-left: 21px;
+}
+
+.time-line-inner {
+  height: 100vh;
+  border-left: 1px solid #ccc;
+}
+
+.quote {
+  font-family: monospace;
+}
+
+ul li {
+  margin-top: 20px;
+  color: #2da44e;
+}
+
+
+footer {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #2da44e;
+  color: #fff;
+}
+
+footer small {
+  font-size: 0.6rem;
+  margin-left: 10px;
+}
+footer i {
+  color: #fff;
+  margin-left: 10px;
+}
+.to-top {
+  background: rgb(226, 224, 224);
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: #2da44e;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s;
+}
+
+.to-top.active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.to-top.active:hover {
+  background: #ccc;
+}
+
+@media only screen and (max-width: 720px) {
+
+  .about-us {
+    margin-top: 90px;
+  }
+
+  .sign-up {
+    margin-bottom: 20px;
+  }
+
+
+
+  .about {
+    display: unset;
+  }
+
+  .about-img {
+    width: 100%;
+  }
+
+  .about-text {
+    width: 100%;
+  }
+
+  .about-text2 {
+    width: 100%;
+  }
+
+  .about-img2 {
+    width: 100%;
+  }
+
+  .feature-text {
+    width: 100%;
+  }
+
+  .time-line {
+    display: unset;
+  }
+
+  .meal-time-line {
+    width: 100%;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+  }
+
+  .dev-1 {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-image: url(./Onen\ Sensy.jpeg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .dev-2 {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-image: url(./Peter\ Kikomeko.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .dev-3 {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-image: url(./Muhumuza\ Victor.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .dev-4 {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-image: url(./Rechael\ Nambooze.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .dev-5 {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-image: url(./avatar.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .dev-team {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #f6f8fa;
+  }
+
+  .dev-name {
+    font-weight: 600;
+  }
+
+  .dev-team p {
+    text-align: center;
+    font-size: 0.7rem;
+    padding: 2px;
+  }
+
+  .feature-container {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.7rem;
+    padding: 5px;
+  }
+
+  .feature-container div {
+    margin: 5px;
+  }
+}
+
+nav{
+  background: rgb(63, 63, 63);
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+
+}
+
+.logo{
+  position: absolute;
+ width: 130px;
+ top: 10px;
+ left: 30px;
+
+}
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a{
+  color: rgb(196, 191, 191);
+  font-size: 12px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+a.active,a:hover{
+  text-decoration: underline;
+  transition: .5s;
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: rgb(196, 191, 191);
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
+@media (max-width: 952px){
+.logo{
+  position: absolute;
+ width: 120px;
+ top: 10px;
+ left: 30px;
+
+}
+
+  nav ul li a{
+      font: size 16px;
+  }
+}
+
+@media (max-width: 1230px){
+.checkbtn{
+  display: block;
+}
+
+ul{
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  background: rgb(63, 63, 63);
+  top: 80px;
+  left: -120%;
+  text-align: center;
+  transition: all .5s;
+}
+
+nav ul li{
+  display: block;
+  margin: 50px 0;
+  line-height: 30px;
+}
+
+
+nav ul li a{
+  font-size: 20px;
+}
+
+a:hover,a.active{
+  text-decoration: underline;
+}
+
+#check:checked ~ ul{
+  left: 0;
+}
+}

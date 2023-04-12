@@ -338,7 +338,30 @@ footer i {
   background: #ccc;
 }
 
+@media only screen and (min-width: 720px) {
+  .about_sm{
+    display: none;
+  }
+  .features_sm{
+    display: none;
+  }
+  .dev_sm{
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 720px) {
+  .about_lg{
+    display: none;
+  }
+
+  .features_lg{
+    display: none;
+  }
+
+  .dev_lg{
+    display: none;
+  }
 
   .about-us {
     margin-top: 90px;
@@ -471,6 +494,8 @@ nav{
   background: rgb(63, 63, 63);
   height: 80px;
   width: 100%;
+  position: fixed;
+  z-index: 1;
 }
 
 .logo{
@@ -539,10 +564,6 @@ a.active,a:hover{
   display: block;
 }
 
-body{
-  overflow: hidden;
-}
-
 ul{
   position: fixed;
   z-index: 1;
@@ -581,5 +602,5 @@ section{
   url(./food-min.jpeg);
   background-size: cover;
   background-position: center;
-  height: calc(100vh - 80px);
+  height:100vh;
 }

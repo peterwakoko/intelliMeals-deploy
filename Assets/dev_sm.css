@@ -1,0 +1,569 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+html {
+  box-sizing: border-box;
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+
+@media only screen and (min-width: 720px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 1240px) {
+  html {
+    font-size: 24px;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.card p {
+  text-align: center;
+}
+
+
+
+.dev-team {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #f6f8fa;
+}
+
+.dev-name {
+  font-weight: 600;
+}
+
+.dev-team p {
+  text-align: center;
+  font-size: 0.7rem;
+  padding: 10px;
+}
+
+.dev-1 {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-image: url(img/Onen\ Sensy.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
+.dev-2 {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-image: url(./Peter\ Kikomeko.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.dev-3 {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-image: url(./Muhumuza\ Victor.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.dev-4 {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-image: url(img/Rechael\ Nambooze.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.dev-5 {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-image: url(img/avatar.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.dev-cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.to-top {
+  background: rgb(226, 224, 224);
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: #2da44e;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s;
+}
+
+.to-top.active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.to-top.active:hover {
+  background: #ccc;
+}
+
+@media only screen and (max-width: 720px) {
+
+  .feature-text {
+    width: 100%;
+  }
+
+  .time-line {
+    display: unset;
+  }
+
+  .meal-time-line {
+    width: 100%;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+  }
+
+  .dev-1 {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-image: url(./Onen\ Sensy.jpeg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .dev-2 {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-image: url(./Peter\ Kikomeko.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .dev-3 {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-image: url(./Muhumuza\ Victor.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .dev-4 {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-image: url(./Rechael\ Nambooze.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .dev-5 {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-image: url(./avatar.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .dev-team {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #f6f8fa;
+  }
+
+  .dev-name {
+    font-weight: 600;
+  }
+
+  .dev-team p {
+    text-align: center;
+    font-size: 0.7rem;
+    padding: 2px;
+  }
+
+  .dev-cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    /* border: 1px solid red; */
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    /* border: 1px solid red; */
+  }
+
+  .dev-team {
+    width: 100%;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #f6f8fa;
+  }
+
+}
+
+nav{
+  background: rgb(63, 63, 63);
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+
+}
+
+.logo{
+  position: absolute;
+ width: 130px;
+ top: 10px;
+ left: 30px;
+
+}
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a{
+  color: rgb(196, 191, 191);
+  font-size: 12px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+a.active,a:hover{
+  text-decoration: underline;
+  transition: .5s;
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: rgb(196, 191, 191);
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
+@media (max-width: 952px){
+.logo{
+  position: absolute;
+ width: 120px;
+ top: 10px;
+ left: 30px;
+
+}
+
+  nav ul li a{
+      font: size 16px;
+  }
+}
+
+@media (max-width: 1230px){
+.checkbtn{
+  display: block;
+}
+
+ul{
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  background: rgb(63, 63, 63);
+  top: 80px;
+  left: -120%;
+  text-align: center;
+  transition: all .5s;
+}
+
+nav ul li{
+  display: block;
+  margin: 50px 0;
+  line-height: 30px;
+}
+
+
+nav ul li a{
+  font-size: 20px;
+}
+
+a:hover,a.active{
+  text-decoration: underline;
+}
+
+#check:checked ~ ul{
+  left: 0;
+}
+}
+
+
+/* section{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
+  url(img/food-min.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+} */
+
+
+
+
+
+
+
+
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+html {
+  box-sizing: border-box;
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+
+@media only screen and (min-width: 720px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 1240px) {
+  html {
+    font-size: 24px;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+nav{
+  background: rgb(63, 63, 63);
+  height: 90px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+.logo{
+  position: absolute;
+ width: 130px;
+ top: 10px;
+ left: 30px;
+
+}
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a{
+  color: rgb(196, 191, 191);
+  font-size: 12px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+a.active,a:hover{
+  text-decoration: underline;
+  transition: .5s;
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: rgb(196, 191, 191);
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+  }
+  
+  .card p {
+    text-align: center;
+  }
+  
+  
+  
+  .dev-team {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #f6f8fa;
+  }
+  
+  .dev-name {
+    font-weight: 600;
+  }
+  
+  .dev-team p {
+    text-align: center;
+    font-size: 0.7rem;
+    padding: 10px;
+  }
+  
+  .dev-1 {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-image: url(./Onen\ Sensy.jpeg);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .dev-2 {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-image: url(./Peter\ Kikomeko.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .dev-3 {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-image: url(./Muhumuza\ Victor.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .dev-4 {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-image: url(./Rechael\ Nambooze.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .dev-5 {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-image: url(./avatar.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .dev-cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  } */
+  
