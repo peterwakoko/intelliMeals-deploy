@@ -36,6 +36,14 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
+section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
+    url(./food-min.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
 nav {
   background: rgb(63, 63, 63);
   height: 80px;
@@ -600,12 +608,4 @@ footer i {
   #check:checked ~ ul {
     left: 0;
   }
-}
-
-section {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
-    url(./food-min.jpeg);
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
 }
