@@ -621,4 +621,20 @@ footer i {
   .caption-1 h1 {
     text-align: center;
   }
+
+  .caption-2 {
+    position: absolute;
+    right: 70px;
+    bottom: 20px;
+    font-weight: lighter;
+    color: #cec9c9;
+    letter-spacing: 2px;
+    padding: 10px;
+    margin-top: -20px;
+    font-size: 1.2rem;
+  }
+
+  .caption-2 h4 {
+    text-align: center;
+  }
 }
