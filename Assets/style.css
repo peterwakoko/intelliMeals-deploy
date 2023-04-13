@@ -609,3 +609,16 @@ footer i {
     left: 0;
   }
 }
+
+@media only screen and (max-width: 720px) {
+  .caption-1 {
+    font-size: 1.2rem;
+    top: 170px;
+    margin-left: 24px;
+    padding: 10px;
+  }
+
+  .caption-1 h1 {
+    text-align: center;
+  }
+}
