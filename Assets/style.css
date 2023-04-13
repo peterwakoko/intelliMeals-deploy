@@ -36,6 +36,61 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
+nav {
+  background: rgb(63, 63, 63);
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+.logo {
+  position: absolute;
+  width: 130px;
+  top: 10px;
+  left: 30px;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: rgb(196, 191, 191);
+  font-size: 12px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+a.active,
+a:hover {
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: rgb(196, 191, 191);
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
 .caption-1 {
   position: absolute;
   top: 210px;
@@ -495,61 +550,6 @@ footer i {
   .feature-container div {
     margin: 5px;
   }
-}
-
-nav {
-  background: rgb(63, 63, 63);
-  height: 80px;
-  width: 100%;
-  position: fixed;
-  z-index: 1;
-}
-
-.logo {
-  position: absolute;
-  width: 130px;
-  top: 10px;
-  left: 30px;
-}
-
-nav ul {
-  float: right;
-  margin-right: 20px;
-}
-
-nav ul li {
-  display: inline-block;
-  line-height: 80px;
-  margin: 0 5px;
-}
-
-nav ul li a {
-  color: rgb(196, 191, 191);
-  font-size: 12px;
-  padding: 7px 13px;
-  border-radius: 3px;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-a.active,
-a:hover {
-  text-decoration: underline;
-  transition: 0.5s;
-}
-
-.checkbtn {
-  font-size: 30px;
-  color: rgb(196, 191, 191);
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
-  cursor: pointer;
-  display: none;
-}
-
-#check {
-  display: none;
 }
 
 @media (max-width: 952px) {
