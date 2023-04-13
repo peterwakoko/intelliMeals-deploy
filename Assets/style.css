@@ -197,6 +197,10 @@ ul li {
   text-align: center;
 }
 
+.feature-container h3 {
+  text-align: center;
+}
+
 .feature-container div {
   margin: 20px;
 }
