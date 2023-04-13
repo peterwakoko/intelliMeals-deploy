@@ -625,12 +625,12 @@ footer i {
   .caption-2 {
     position: absolute;
     right: 5px;
-    bottom: 20px;
+    bottom: 80px;
     font-weight: lighter;
     color: #cec9c9;
     letter-spacing: 2px;
     padding: 10px;
-    margin-top: -20px;
+    margin-top: -80px;
     font-size: 0.9rem;
   }
 
