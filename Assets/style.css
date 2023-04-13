@@ -624,7 +624,7 @@ footer i {
 
   .caption-2 {
     position: absolute;
-    right: 50px;
+    right: 40px;
     bottom: 20px;
     font-weight: lighter;
     color: #cec9c9;
@@ -635,6 +635,6 @@ footer i {
   }
 
   .caption-2 h4 {
-    text-align: center;
+    /* text-align: center; */
   }
 }
