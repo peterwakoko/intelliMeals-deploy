@@ -193,6 +193,10 @@ ul li {
   padding: 20px;
 }
 
+.feature-container p {
+  text-align: center;
+}
+
 .feature-container div {
   margin: 20px;
 }
