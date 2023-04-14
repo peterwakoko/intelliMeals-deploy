@@ -578,6 +578,11 @@ footer i {
   .feature-text p {
     text-align: center;
   }
+
+  .about-text h1,
+  p {
+    text-align: center;
+  }
 }
 
 @media (max-width: 952px) {
