@@ -611,6 +611,12 @@ footer i {
     display: flex;
     flex-direction: column;
   }
+
+  .to-top.active {
+    bottom: 94px;
+    pointer-events: auto;
+    opacity: 1;
+  }
 }
 
 @media (max-width: 952px) {
