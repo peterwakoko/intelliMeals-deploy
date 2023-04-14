@@ -558,6 +558,10 @@ footer i {
   .feature-container div {
     margin: 5px;
   }
+
+  .about-img {
+    display: none;
+  }
 }
 
 @media (max-width: 952px) {
