@@ -562,6 +562,10 @@ footer i {
   .about-img {
     display: none;
   }
+
+  .about-img2 {
+    display: none;
+  }
 }
 
 @media (max-width: 952px) {
