@@ -566,6 +566,10 @@ footer i {
   .about-img2 {
     display: none;
   }
+
+  .meal-time-line {
+    display: none;
+  }
 }
 
 @media (max-width: 952px) {
