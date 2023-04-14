@@ -559,6 +559,10 @@ footer i {
     margin: 5px;
   }
 
+  .features {
+    height: 800px;
+  }
+
   .about-img {
     display: none;
   }
