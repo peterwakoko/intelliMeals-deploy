@@ -601,6 +601,16 @@ footer i {
   p {
     text-align: center;
   }
+
+  .socials {
+    display: flex;
+    /* flex-direction: column; */
+  }
+
+  .policy {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 952px) {
