@@ -221,10 +221,6 @@ a:hover {
   border-left: 1px solid #ccc;
 }
 
-.quote {
-  font-family: monospace;
-}
-
 ul li {
   margin-top: 20px;
   color: #2da44e;
@@ -481,6 +477,12 @@ footer i {
     justify-content: center;
     align-items: center;
     margin: 2px;
+  }
+
+  .quote {
+    text-align: center;
+    margin: 10px;
+    font-weight: 300;
   }
 
   .dev-cards {
