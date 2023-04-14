@@ -570,6 +570,14 @@ footer i {
   .meal-time-line {
     display: none;
   }
+
+  .feature-text h1 {
+    text-align: center;
+  }
+
+  .feature-text p {
+    text-align: center;
+  }
 }
 
 @media (max-width: 952px) {
