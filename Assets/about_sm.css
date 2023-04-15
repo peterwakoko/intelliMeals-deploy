@@ -118,6 +118,11 @@ a:hover {
   line-height: 1.5;
 }
 
+.about-text h1,
+p {
+  text-align: center;
+}
+
 .about-text p {
   padding: 10px;
 }
