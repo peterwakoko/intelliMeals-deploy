@@ -44,7 +44,7 @@ html {
   padding: 20px;
 }
 
-.caption-1 h1{
+.caption-1 h1 {
   font-weight: 900;
   letter-spacing: 2px;
   font-size: 1.9rem;
@@ -59,7 +59,7 @@ html {
   margin-top: -20px;
 }
 
-.caption-2 h4{
+.caption-2 h4 {
   letter-spacing: 2px;
   font-weight: lighter;
   font-size: 1.3rem;
@@ -174,7 +174,6 @@ ul li {
   color: #2da44e;
 }
 
-
 footer {
   width: 100%;
   height: 200px;
@@ -183,6 +182,7 @@ footer {
   justify-content: space-around;
   background-color: #2da44e;
   color: #fff;
+  padding-top: 30px;
 }
 
 footer small {
@@ -222,8 +222,17 @@ footer i {
   background: #ccc;
 }
 
-@media only screen and (max-width: 720px) {
+.socials {
+  display: flex;
+  /* flex-direction: column; */
+}
 
+.policy {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 720px) {
   .about-us {
     margin-top: 90px;
   }
@@ -231,8 +240,6 @@ footer i {
   .sign-up {
     margin-bottom: 20px;
   }
-
-
 
   .about {
     display: unset;
@@ -351,35 +358,33 @@ footer i {
   }
 }
 
-nav{
+nav {
   background: rgb(63, 63, 63);
   height: 80px;
   width: 100%;
   position: fixed;
   z-index: 1;
-
 }
 
-.logo{
+.logo {
   position: absolute;
- width: 130px;
- top: 10px;
- left: 30px;
-
+  width: 130px;
+  top: 10px;
+  left: 30px;
 }
 
-nav ul{
+nav ul {
   float: right;
   margin-right: 20px;
 }
 
-nav ul li{
+nav ul li {
   display: inline-block;
   line-height: 80px;
   margin: 0 5px;
 }
 
-nav ul li a{
+nav ul li a {
   color: rgb(196, 191, 191);
   font-size: 12px;
   padding: 7px 13px;
@@ -388,12 +393,13 @@ nav ul li a{
   text-decoration: none;
 }
 
-a.active,a:hover{
+a.active,
+a:hover {
   text-decoration: underline;
-  transition: .5s;
+  transition: 0.5s;
 }
 
-.checkbtn{
+.checkbtn {
   font-size: 30px;
   color: rgb(196, 191, 191);
   float: right;
@@ -403,57 +409,56 @@ a.active,a:hover{
   display: none;
 }
 
-#check{
+#check {
   display: none;
 }
 
-@media (max-width: 952px){
-.logo{
-  position: absolute;
- width: 120px;
- top: 10px;
- left: 30px;
+@media (max-width: 952px) {
+  .logo {
+    position: absolute;
+    width: 120px;
+    top: 10px;
+    left: 30px;
+  }
 
-}
-
-  nav ul li a{
-      font: size 16px;
+  nav ul li a {
+    font: size 16px;
   }
 }
 
-@media (max-width: 1230px){
-.checkbtn{
-  display: block;
-}
+@media (max-width: 1230px) {
+  .checkbtn {
+    display: block;
+  }
 
-ul{
-  position: fixed;
-  z-index: 1;
-  width: 100%;
-  height: 100vh;
-  background: rgb(63, 63, 63);
-  top: 80px;
-  left: -120%;
-  text-align: center;
-  transition: all .5s;
-}
+  ul {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    background: rgb(63, 63, 63);
+    top: 80px;
+    left: -120%;
+    text-align: center;
+    transition: all 0.5s;
+  }
 
-nav ul li{
-  display: block;
-  margin: 50px 0;
-  line-height: 30px;
-}
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
 
+  nav ul li a {
+    font-size: 20px;
+  }
 
-nav ul li a{
-  font-size: 20px;
-}
+  a:hover,
+  a.active {
+    text-decoration: underline;
+  }
 
-a:hover,a.active{
-  text-decoration: underline;
-}
-
-#check:checked ~ ul{
-  left: 0;
-}
+  #check:checked ~ ul {
+    left: 0;
+  }
 }
