@@ -137,7 +137,6 @@ p {
   background-image: url(./food-min.jpeg);
   background-position: center;
   background-size: cover;
-  display: none;
 }
 
 @media (max-width: 952px) {
@@ -156,6 +155,10 @@ p {
 @media (max-width: 1230px) {
   .checkbtn {
     display: block;
+  }
+
+  .about-img {
+    display: none;
   }
 
   ul {
@@ -200,5 +203,11 @@ p {
 
   .about-img {
     width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-img {
+    display: none;
   }
 }
