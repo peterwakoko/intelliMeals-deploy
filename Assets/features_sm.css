@@ -36,13 +36,10 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
-
 ul li {
   margin-top: 20px;
   color: #2da44e;
 }
-
-
 
 @media only screen and (max-width: 720px) {
   .feature-text {
@@ -69,35 +66,33 @@ ul li {
   }
 }
 
-nav{
+nav {
   background: rgb(63, 63, 63);
   height: 80px;
   width: 100%;
   position: fixed;
   z-index: 1;
-
 }
 
-.logo{
+.logo {
   position: absolute;
- width: 130px;
- top: 10px;
- left: 30px;
-
+  width: 130px;
+  top: 10px;
+  left: 30px;
 }
 
-nav ul{
+nav ul {
   float: right;
   margin-right: 20px;
 }
 
-nav ul li{
+nav ul li {
   display: inline-block;
   line-height: 80px;
   margin: 0 5px;
 }
 
-nav ul li a{
+nav ul li a {
   color: rgb(196, 191, 191);
   font-size: 12px;
   padding: 7px 13px;
@@ -106,12 +101,13 @@ nav ul li a{
   text-decoration: none;
 }
 
-a.active,a:hover{
+a.active,
+a:hover {
   text-decoration: underline;
-  transition: .5s;
+  transition: 0.5s;
 }
 
-.checkbtn{
+.checkbtn {
   font-size: 30px;
   color: rgb(196, 191, 191);
   float: right;
@@ -121,7 +117,7 @@ a.active,a:hover{
   display: none;
 }
 
-#check{
+#check {
   display: none;
 }
 
@@ -132,6 +128,7 @@ a.active,a:hover{
   flex-direction: column;
   background: #f6f8fa;
   height: 700px;
+  padding-top: 40px;
 }
 
 .feature-container {
@@ -140,11 +137,11 @@ a.active,a:hover{
   padding: 20px;
 }
 
-.feature-container p{
+.feature-container p {
   text-align: center;
 }
 
-.feature-container h3{
+.feature-container h3 {
   text-align: center;
 }
 
@@ -175,64 +172,63 @@ a.active,a:hover{
   padding: 15px;
 }
 
-@media (max-width: 952px){
-.logo{
-  position: absolute;
- width: 120px;
- top: 10px;
- left: 30px;
+@media (max-width: 952px) {
+  .logo {
+    position: absolute;
+    width: 120px;
+    top: 10px;
+    left: 30px;
+  }
 
-}
-
-  nav ul li a{
-      font: size 16px;
+  nav ul li a {
+    font: size 16px;
   }
 }
 
-@media (max-width: 1230px){
-.checkbtn{
-  display: block;
-}
+@media (max-width: 1230px) {
+  .checkbtn {
+    display: block;
+  }
 
-ul{
-  position: fixed;
-  z-index: 1;
-  width: 100%;
-  height: 100vh;
-  background: rgb(63, 63, 63);
-  top: 80px;
-  left: -120%;
-  text-align: center;
-  transition: all .5s;
-}
+  ul {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    background: rgb(63, 63, 63);
+    top: 80px;
+    left: -120%;
+    text-align: center;
+    transition: all 0.5s;
+  }
 
-nav ul li{
-  display: block;
-  margin: 50px 0;
-  line-height: 30px;
-}
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
 
+  nav ul li a {
+    font-size: 20px;
+  }
 
-nav ul li a{
-  font-size: 20px;
-}
+  a:hover,
+  a.active {
+    text-decoration: underline;
+  }
 
-a:hover,a.active{
-  text-decoration: underline;
-}
+  #check:checked ~ ul {
+    left: 0;
+  }
 
-#check:checked ~ ul{
-  left: 0;
-}
-
-.features {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background: #f6f8fa;
-  /* height: 100vh; */
-  height: 1170px;
-  /* border: 1px solid red; */
-}
+  .features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #f6f8fa;
+    /* height: 100vh; */
+    height: 1170px;
+    /* border: 1px solid red; */
+  }
 }
