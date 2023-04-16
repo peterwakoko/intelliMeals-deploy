@@ -334,14 +334,38 @@ main section {
   flex-direction: column;
 }
 
-.meal-card {
-  border: 1px solid #ccc;
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: none;
   background: #fff;
   margin-left: 40px;
   margin-right: 40px;
   padding: 10px;
-  border-radius: 10px;
-  height: 100vh;
+  border-radius: 5px;
+  height: 500px;
+}
+
+.history p,
+h1 {
+  text-align: center;
+}
+
+.content button {
+  padding: 10px;
+  background: #2da44e;
+  border-radius: 999px;
+  width: 80px;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+
+.content i {
+  font-size: 2.6rem;
+  color: #747272;
 }
 
 .vertical-line-left {
@@ -453,7 +477,7 @@ header i {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 1245px;
+    height: 100vh;
     padding-left: 5px;
     padding-right: 5px;
     padding-bottom: 50px;
