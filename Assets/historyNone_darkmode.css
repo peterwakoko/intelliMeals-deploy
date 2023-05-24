@@ -375,7 +375,7 @@ h1 {
 }
 
 .vertical-line-left {
-  border: 0.5px solid #e4e2e2;
+  border: 1px solid #4f5050;
   position: absolute;
   height: 70%;
   left: 190px;
@@ -384,7 +384,7 @@ h1 {
 }
 
 .vertical-line-right {
-  border: 0.5px solid #e4e2e2;
+  border: 1px solid #4f5050;
   position: absolute;
   height: 70%;
   right: 190px;
