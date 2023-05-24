@@ -353,6 +353,7 @@ main section {
 .history p,
 h1 {
   text-align: center;
+  color: #bdc1c6;
 }
 
 .content button {
@@ -394,6 +395,7 @@ header i {
   right: 207px;
   top: 19px;
   font-size: 28px;
+  color: #e8eaed;
 }
 
 .preloader {
