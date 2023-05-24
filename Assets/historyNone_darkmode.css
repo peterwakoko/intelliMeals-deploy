@@ -83,6 +83,7 @@ nav {
   grid-area: navbar;
   height: 100vh;
   border-right: none;
+  border-left: none;
 }
 
 main {
