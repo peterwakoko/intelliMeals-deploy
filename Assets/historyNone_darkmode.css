@@ -201,7 +201,7 @@ ul li a:hover {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #fff;
+  background-color: #202124;
   min-width: 160px;
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -209,7 +209,7 @@ ul li a:hover {
   right: 0;
   top: 62px;
   border-radius: 10px;
-  border: none;
+  border: 1px solid #4f5050;
 }
 
 .dropdown-content a {
