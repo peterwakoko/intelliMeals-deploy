@@ -558,6 +558,10 @@ header i {
   }
 
   .fa-house-user {
+    color: #bdc1c6;
+  }
+
+  .fa-clock-rotate-left {
     color: #fff;
   }
 
