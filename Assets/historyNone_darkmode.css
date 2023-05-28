@@ -539,12 +539,12 @@ header i {
   }
 
   .footer-nav {
-    border-top: 1px solid #f5f5f5;
+    border-top: 0.1px solid #4f5050;
     width: 100%;
     position: absolute;
     bottom: 0;
     position: fixed;
-    background: #fff;
+    background: #202124;
     height: 60px;
     display: flex;
     justify-content: space-around;
@@ -553,8 +553,12 @@ header i {
   }
 
   .footer-nav a {
-    color: #5f5d5d;
+    color: #bdc1c6;
     font-size: 1.3rem;
+  }
+
+  .fa-house-user {
+    color: #fff;
   }
 
   .mobile-logout {

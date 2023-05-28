@@ -161,6 +161,7 @@ main {
   grid-area: content;
   height: 100vh;
 }
+
 .fa-house-user {
   font-weight: bold;
   color: #fff;

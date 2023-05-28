@@ -336,8 +336,8 @@ main section {
 
 .content {
   display: flex;
-  /* align-items: center; */
-  /* justify-content: center; */
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   border: none;
   background: #fff;
@@ -345,28 +345,21 @@ main section {
   margin-right: 40px;
   padding: 10px;
   border-radius: 5px;
-  height: 700px;
-  /* border: 1px solid red; */
+  height: 500px;
 }
 
-.content .card {
-  /* border: 1px solid red; */
-  width: 100%;
-  margin: 10px;
-  padding: 10px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+.history p,
+h1 {
+  text-align: center;
 }
 
 .content button {
-  position: absolute;
   padding: 10px;
   background: #2da44e;
   border-radius: 999px;
-  width: 100px;
+  width: 80px;
   border: none;
   outline: none;
-  right: 50px;
-  bottom: -120px;
   color: #fff;
   margin-top: 10px;
 }
@@ -374,11 +367,6 @@ main section {
 .content i {
   font-size: 2.6rem;
   color: #747272;
-}
-
-.card-sub-content {
-  display: flex;
-  justify-content: space-between;
 }
 
 .vertical-line-left {
