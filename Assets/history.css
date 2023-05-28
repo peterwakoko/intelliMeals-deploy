@@ -350,11 +350,14 @@ main section {
 }
 
 .content .card {
-  /* border: 1px solid red; */
   width: 100%;
   margin: 10px;
   padding: 10px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.content .card p {
+  font-size: 0.75rem;
 }
 
 .content button {
