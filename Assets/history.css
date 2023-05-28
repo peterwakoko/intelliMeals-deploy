@@ -353,11 +353,15 @@ main section {
   width: 100%;
   margin: 10px;
   padding: 10px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
 }
 
 .content .card p {
   font-size: 0.75rem;
+}
+
+.content .card h3 {
+  font-size: 0.9rem;
 }
 
 .content button {
@@ -369,7 +373,7 @@ main section {
   border: none;
   outline: none;
   right: 50px;
-  bottom: -80px;
+  bottom: 15px;
   color: #fff;
   margin-top: 10px;
 }
