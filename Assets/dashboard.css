@@ -166,6 +166,8 @@ main {
   grid-area: content;
   height: 100vh;
   border-right: none;
+  margin-top: 60px;
+  border-top: none;
 }
 .fa-house-user {
   font-weight: bold;
