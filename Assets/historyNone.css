@@ -67,6 +67,7 @@ nav,
 main {
   border: 0.5px solid #f0efef;
   border-bottom: none;
+  margin-top: 50px;
 }
 
 header {
@@ -75,18 +76,28 @@ header {
   justify-content: center;
   position: relative;
   height: 60px;
+  position: fixed;
+  background-color: #fff;
+  z-index: 4;
+  width: 100%;
+  margin-bottom: 70px;
+  border-bottom: 0.5px solid #f0efef;
 }
 
 nav {
   grid-area: navbar;
   height: 100vh;
   border-right: none;
+  position: fixed;
+  width: 20%;
 }
 
 main {
   grid-area: content;
   height: 100vh;
   border-right: none;
+  margin-top: 60px;
+  border-top: none;
 }
 .fa-house-user {
   font-weight: bold;
@@ -443,6 +454,7 @@ header i {
 
   nav {
     overflow: hidden;
+    position: unset;
   }
 
   main {
