@@ -97,7 +97,6 @@ body {
   padding: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
-  /* border-radius: 10px; */
   background: #fff;
 }
 
@@ -115,7 +114,6 @@ body {
 }
 
 .card-bottom {
-  /* border: 1px solid #ccc; */
   padding: 10px;
   border-radius: 10px;
   background: #fff;
@@ -139,20 +137,29 @@ nav,
 main {
   border: 0.5px solid #f0efef;
   border-bottom: none;
+  margin-top: 50px;
 }
 
 header {
   grid-area: header;
   display: flex;
   justify-content: center;
-  position: relative;
+  position: fixed;
+  z-index: 4;
   height: 60px;
+  background-color: #fff;
+  width: 100%;
+  margin-bottom: 70px;
+  border-bottom: 0.5px solid #f0efef;
 }
 
 nav {
   grid-area: navbar;
   height: 100vh;
   border-right: none;
+  /* border: 1px solid red; */
+  position: fixed;
+  width: 20%;
 }
 
 main {
@@ -583,8 +590,6 @@ header i {
   .meal-card {
     margin-left: 0px;
     margin-right: 0;
-    /* margin-top: 3px; */
-    /* border: 1px solid red; */
     padding: 0;
     margin-bottom: 2px;
     width: 100%;
@@ -677,6 +682,7 @@ header i {
 
   nav {
     overflow: hidden;
+    position: unset;
   }
 
   main {
