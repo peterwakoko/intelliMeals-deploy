@@ -368,6 +368,10 @@ h1 {
   color: #bdc1c6;
 }
 
+.history p {
+  font-size: 0.7rem;
+}
+
 .content button {
   padding: 10px;
   background: #2da44e;
@@ -495,11 +499,16 @@ header i {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 70vh;
     padding-left: 5px;
     padding-right: 5px;
     padding-bottom: 50px;
-    padding-top: 30px;
+    padding-top: 5px;
+    /* border: 1px solid red; */
+  }
+
+  .history p {
+    font-size: 0.7rem;
   }
 
   .logo {
