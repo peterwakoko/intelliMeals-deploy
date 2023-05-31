@@ -157,7 +157,6 @@ nav {
   grid-area: navbar;
   height: 100vh;
   border-right: none;
-  /* border: 1px solid red; */
   position: fixed;
   width: 20%;
 }
@@ -718,13 +717,14 @@ header i {
 
   .content {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     height: 1245px;
     padding-left: 5px;
     padding-right: 5px;
     padding-bottom: 50px;
-    padding-top: 30px;
+    /* padding-top: 30px; */
+    border: 1px solid red;
   }
 
   .logo {
