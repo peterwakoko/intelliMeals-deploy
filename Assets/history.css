@@ -292,6 +292,13 @@ ul li a:hover {
   height: 0.5rem;
 }
 
+.delete-btn-container {
+  position: relative;
+  /* border: 1px solid red; */
+  height: 60px;
+  width: 100%;
+}
+
 .notification-skeleton {
   position: absolute;
   right: 207px;
@@ -380,8 +387,8 @@ main section {
   width: 100px;
   border: none;
   outline: none;
-  right: 50px;
-  bottom: 15px;
+  right: 10px;
+  /* bottom: 15px; */
   color: #fff;
   margin-top: 10px;
 }
@@ -548,26 +555,26 @@ header i {
     width: 100px;
     border: none;
     outline: none;
-    right: 50px;
-    bottom: 127px;
+    right: 1px;
+    /* bottom: 127px; */
     color: #fff;
     margin-top: 10px;
   }
 
   .content {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    height: 70vh;
+    height: 100vh;
     padding-left: 5px;
     padding-right: 5px;
     padding-bottom: 50px;
-    padding-top: 2px;
+    /* padding-top: -120px; */
     /* border: 1px solid red; */
   }
 
   .content .card p {
-    font-size: 0.5rem;
+    font-size: 0.63rem;
   }
 
   .content .card h3 {
