@@ -470,6 +470,7 @@ header i {
 
   nav {
     overflow: hidden;
+    position: unset;
   }
 
   main {
