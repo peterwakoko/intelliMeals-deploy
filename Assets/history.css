@@ -502,17 +502,6 @@ header i {
     padding: 10px;
   }
 
-  .content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 50px;
-    padding-top: 30px;
-  }
-
   .logo {
     position: absolute;
     left: 3px;
@@ -549,6 +538,40 @@ header i {
     right: 98px;
     font-size: 13px;
     top: 12px;
+  }
+
+  .content button {
+    position: absolute;
+    padding: 10px;
+    background: #2da44e;
+    border-radius: 999px;
+    width: 100px;
+    border: none;
+    outline: none;
+    right: 50px;
+    bottom: 127px;
+    color: #fff;
+    margin-top: 10px;
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 50px;
+    padding-top: 2px;
+    /* border: 1px solid red; */
+  }
+
+  .content .card p {
+    font-size: 0.5rem;
+  }
+
+  .content .card h3 {
+    font-size: 0.7 rem;
   }
 
   .title {
