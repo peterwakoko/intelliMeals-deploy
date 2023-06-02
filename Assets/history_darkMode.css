@@ -67,7 +67,7 @@ body {
 
 nav,
 main {
-  border: 0.5px solid #f0efef;
+  border: 0.1px solid #4f5050;
   border-bottom: none;
   margin-top: 50px;
 }
@@ -82,13 +82,14 @@ header {
   background-color: #202124;
   width: 100%;
   margin-bottom: 70px;
-  border-bottom: 0.5px solid #f0efef;
+  border-bottom: 0.5px solid #4f5050;
 }
 
 nav {
   grid-area: navbar;
   height: 100vh;
   border-right: none;
+  border-left: none;
   position: fixed;
   width: 20%;
 }
@@ -402,7 +403,7 @@ main section {
 }
 
 .vertical-line-left {
-  border: 0.5px solid #e4e2e2;
+  border: 1px solid #4f5050;
   position: absolute;
   height: 70%;
   left: 190px;
@@ -411,7 +412,7 @@ main section {
 }
 
 .vertical-line-right {
-  border: 0.5px solid #e4e2e2;
+  border: 1px solid #4f5050;
   position: absolute;
   height: 70%;
   right: 190px;
