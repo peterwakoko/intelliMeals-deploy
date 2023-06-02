@@ -55,7 +55,7 @@ body {
 
 .active {
   font-weight: 500;
-  color: #fff;
+  color: #bdc1c6;
 }
 
 .meal-card h5 {
@@ -104,7 +104,7 @@ main {
 
 .fa-house-user {
   font-weight: bold;
-  color: #000;
+  color: #bdc1c6;
 }
 
 ul {
@@ -373,26 +373,31 @@ main section {
 
 .content .card p {
   font-size: 0.75rem;
-  color: #fff;
+  color: #bdc1c6;
 }
 
 .content .card h3 {
   font-size: 0.9rem;
-  color: #fff;
+  color: #e8eaed;
 }
 
 .content button {
   position: absolute;
   padding: 10px;
-  background: #2da44e;
+  color: #bdc1c6;
+  border: 1px solid #4f5050;
   border-radius: 999px;
   width: 100px;
-  border: none;
   outline: none;
   right: 50px;
   bottom: 15px;
-  color: #fff;
+  background: #202124;
   margin-top: 10px;
+}
+
+.content button:hover {
+  background: #35363a;
+  cursor: pointer;
 }
 
 .content i {
