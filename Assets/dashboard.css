@@ -47,13 +47,14 @@ body {
 
 .title {
   margin-top: 15px;
-  font-size: 0.9rem;
-  font-weight: 500;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
 .active {
   font-weight: 600;
   color: #000;
+  font-size: 0.64rem;
 }
 
 .health-card h5 {
@@ -69,6 +70,11 @@ body {
   font-weight: 500;
   color: #797676;
   padding: 5px;
+}
+
+.card-sub-content {
+  display: flex;
+  justify-content: space-between;
 }
 
 .calories-card h5 {
@@ -147,18 +153,26 @@ header {
   position: fixed;
   z-index: 4;
   height: 60px;
-  background-color: #fff;
+  /* background-color: #fff; */
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(14px);
   width: 100%;
   margin-bottom: 70px;
   border-bottom: 0.5px solid #f0efef;
+  /* background: #f6f8fa; */
 }
 
 nav {
   grid-area: navbar;
   height: 100vh;
-  border-right: none;
+  /* border-right: none; */
   position: fixed;
   width: 20%;
+  border-radius: 10px;
+  /* background: #f6f8fa; */
+  /* border: 1px solid red; */
+  /* box-shadow: 0 10px 10px rgba(45, 164, 78, 0.2); */
 }
 
 main {
@@ -167,7 +181,30 @@ main {
   border-right: none;
   margin-top: 60px;
   border-top: none;
+  border-left: none;
+  /* background: #f6f8fa; */
 }
+
+.content {
+  /* border: 1px solid red; */
+  /* background: #f6f8fa; */
+  padding: 10px;
+  height: 980px;
+}
+
+.content .card {
+  /* border: 1px solid red; */
+  margin: 10px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 10px 10px rgba(45, 164, 78, 0.2);
+}
+
+.content .card p {
+  font-size: 0.8rem;
+}
+
 .fa-house-user {
   font-weight: bold;
   color: #000;
@@ -186,15 +223,15 @@ ul li {
 
 ul li a {
   text-decoration: none;
-  color: #363636;
-  font-size: 0.6rem;
+  color: #0f1419;
+  font-size: 0.64rem;
   padding: 10px;
   border-radius: 999px;
 }
 
 ul i {
   margin-right: 20px;
-  color: #5f5d5d;
+  color: #0f1419;
   font-size: 0.8rem;
 }
 
@@ -421,20 +458,22 @@ main section {
 }
 
 .health-card {
-  border: 1px solid #ccc;
+  border: none;
   background: #fff;
   padding: 10px;
   border-radius: 10px;
   width: 30%;
+  box-shadow: 0 10px 10px rgba(45, 164, 78, 0.2);
 }
 
 .bmi-status {
-  border: 1px solid #ccc;
+  border: none;
   background: #fff;
   padding: 10px;
   border-radius: 10px;
   width: 30%;
   margin-left: 10px;
+  box-shadow: 0 10px 10px rgba(45, 164, 78, 0.2);
 }
 
 th {
@@ -451,21 +490,23 @@ td {
 }
 
 .calories-card {
-  border: 1px solid #ccc;
+  border: none;
   background: #fff;
   padding: 10px;
   border-radius: 10px;
   width: 40%;
   margin-left: 10px;
+  box-shadow: 0 10px 10px rgba(45, 164, 78, 0.2);
 }
 
 .meal-card {
-  border: 1px solid #ccc;
+  border: none;
   background: #fff;
   margin-left: 40px;
   margin-right: 40px;
   padding: 10px;
   border-radius: 10px;
+  box-shadow: 0 10px 10px rgba(45, 164, 78, 0.2);
 }
 
 .meal-card-btn {
@@ -481,6 +522,14 @@ td {
   outline: none;
   background: #2da44e;
   color: #fff;
+  cursor: pointer;
+}
+
+.meal-card-btn button:hover {
+  box-shadow: 0px 0px 5px #2da44e;
+  /* border: 1px solid #2DA44E; */
+  background-color: #fff;
+  color: #2da44e;
 }
 
 .meal-container-inner {
@@ -655,7 +704,7 @@ header i {
   }
 
   .health-card {
-    border: 1px solid #ccc;
+    border: none;
     width: 100%;
     margin: 10px;
     height: 270px;
@@ -666,7 +715,7 @@ header i {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #ccc;
+    border: none;
     background: #fff;
     padding: 10px;
     border-radius: 10px;
@@ -725,6 +774,14 @@ header i {
     padding-bottom: 50px;
     /* padding-top: 30px; */
     /* border: 1px solid red; */
+  }
+
+  .content .card p {
+    font-size: 0.63rem;
+  }
+
+  .content .card h3 {
+    font-size: 0.7 rem;
   }
 
   .logo {
