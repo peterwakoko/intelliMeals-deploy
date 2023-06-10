@@ -35,6 +35,16 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
+body:not(.dark-mode) {
+  background: #fff;
+  color: #000;
+}
+
+.dark-mode {
+  background: #120e0e;
+  color: #fff;
+}
+
 body {
   display: grid;
   grid-template-areas:
@@ -53,9 +63,8 @@ body {
 }
 
 .active {
-  /* font-weight: 600; */
   color: #000;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
 }
 
 .health-card h5 {
@@ -105,7 +114,6 @@ body {
   padding: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
-  /* background: #fff; */
   background: #f6f8fa;
 }
 
@@ -125,7 +133,6 @@ body {
 .card-bottom {
   padding: 10px;
   border-radius: 10px;
-  /* background: #fff; */
   background: #f6f8fa;
 }
 
@@ -157,55 +164,50 @@ header {
   position: fixed;
   z-index: 4;
   height: 60px;
-  /* background-color: #fff; */
   background: rgba(250, 249, 249, 0.6);
-  /* background: #faf9f9; */
-
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(14px);
   width: 100%;
   margin-bottom: 70px;
   border-bottom: 0.5px solid #f0efef;
-  /* background: #f6f8fa; */
 }
 
 nav {
   grid-area: navbar;
   height: 100vh;
-  /* border-right: none; */
+  border-left: none;
+  border-top: none;
+  border-right: none;
   position: fixed;
   width: 20%;
-  border-radius: 10px;
-  /* background: #f6f8fa; */
-  /* border: 1px solid red; */
-  /* box-shadow: 0 10px 10px rgba(45, 164, 78, 0.2); */
+  background: rgba(250, 249, 249, 0.6);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(14px);
 }
 
 main {
   grid-area: content;
-  height: 100vh;
+  height: 1030px;
   border-right: none;
   margin-top: 60px;
   border-top: none;
-  border-left: none;
-  /* background: #f6f8fa; */
+  background: rgba(250, 249, 249, 0.6);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(14px);
 }
 
 .content {
-  /* border: 1px solid red; */
-  /* background: #f6f8fa; */
   padding: 10px;
   height: 980px;
 }
 
 .content .card {
-  /* border: 1px solid red; */
   margin: 10px;
-  /* background: #fff; */
+  width: 100%;
   background: #f6f8fa;
   border-radius: 10px;
   padding: 10px;
-  box-shadow: 0 10px 10px rgba(45, 164, 78, 0.2);
+  box-shadow: 0 10px 10px rgba(150, 172, 156, 0.2);
 }
 
 .content .card p {
@@ -231,16 +233,14 @@ ul li {
 ul li a {
   text-decoration: none;
   color: #000;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   padding: 10px;
   border-radius: 999px;
 }
 
 ul i {
   margin-right: 20px;
-  /* color: #0f1419; */
   color: #2da44e;
-
   font-size: 1rem;
 }
 
@@ -295,7 +295,11 @@ ul li a:hover {
 }
 
 .log-out-text {
-  margin-left: -17px;
+  margin-left: -16px;
+}
+
+.theme-text {
+  margin-left: -25px;
 }
 
 #user-icon {
@@ -306,7 +310,7 @@ ul li a:hover {
   font-size: 18px;
 }
 
-#sun-icon {
+#theme-icon {
   position: absolute;
   color: #2da44e;
   top: 104px;
@@ -325,7 +329,10 @@ ul li a:hover {
 .dropdown-content {
   display: none;
   position: absolute;
-  background: #fff;
+  /* background: #fff; */
+  background: rgba(250, 249, 249, 1.2);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(14px);
   min-width: 160px;
   overflow: auto;
   box-shadow: 0 10px 10px rgba(45, 164, 78, 0.2);
@@ -356,7 +363,7 @@ ul li a:hover {
 
 .dropdown-content i:hover {
   /* background: #e0e7ee; */
-  box-shadow: 0px 0px 5px #2da44e;
+  /* box-shadow: 0px 0px 5px #2da44e; */
   /* border: 1px solid #2DA44E; */
   background-color: #fff;
   color: #2da44e;
@@ -370,7 +377,7 @@ ul li a:hover {
   border-bottom: 1px solid #d6d4d4;
 }
 
-.light-mode-item {
+.theme-item {
   border-bottom: 1px solid #d6d4d4;
 }
 
@@ -448,6 +455,36 @@ ul li a:hover {
   top: 5px;
 }
 
+.delete-btn-container {
+  position: relative;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+}
+
+.delete-btn-container button {
+  position: absolute;
+  background: #2da44e;
+  border-radius: 999px;
+  color: #fff;
+  padding: 10px;
+  outline: none;
+  border: none;
+  right: 0;
+  top: 10px;
+}
+
+.delete-btn-container button:hover {
+  box-shadow: 0px 0px 5px #2da44e;
+  /* border: 1px solid #2DA44E; */
+  background-color: #fff;
+  color: #2da44e;
+  cursor: pointer;
+}
+
 @keyframes skeleton-loading {
   0% {
     background-color: hsl(200, 20%, 70%);
@@ -481,26 +518,23 @@ main section {
 }
 
 .health-card {
-  border: none;
-  /* background: #fff; */
   background: #f6f8fa;
-
   padding: 10px;
   border-radius: 10px;
   width: 30%;
-  box-shadow: 0 10px 10px rgba(45, 164, 78, 0.2);
+  box-shadow: 0 10px 10px rgba(150, 172, 156, 0.2);
 }
 
 .bmi-status {
   border: none;
-  /* background: #fff; */
+  display: flex;
+  justify-content: center;
   background: #f6f8fa;
-
   padding: 10px;
   border-radius: 10px;
-  width: 30%;
+  width: 40%;
   margin-left: 10px;
-  box-shadow: 0 10px 10px rgba(45, 164, 78, 0.2);
+  box-shadow: 0 10px 10px rgba(150, 172, 156, 0.2);
 }
 
 th {
@@ -518,26 +552,22 @@ td {
 
 .calories-card {
   border: none;
-  /* background: #fff; */
   background: #f6f8fa;
-
   padding: 10px;
   border-radius: 10px;
   width: 40%;
   margin-left: 10px;
-  box-shadow: 0 10px 10px rgba(45, 164, 78, 0.2);
+  box-shadow: 0 10px 10px rgba(150, 172, 156, 0.2);
 }
 
 .meal-card {
   border: none;
-  /* background: #fff; */
   background: #f6f8fa;
-
   margin-left: 40px;
   margin-right: 40px;
   padding: 10px;
   border-radius: 10px;
-  box-shadow: 0 10px 10px rgba(45, 164, 78, 0.2);
+  box-shadow: 0 10px 10px rgba(150, 172, 156, 0.2);
 }
 
 .meal-card-btn {
@@ -558,7 +588,6 @@ td {
 
 .meal-card-btn button:hover {
   box-shadow: 0px 0px 5px #2da44e;
-  /* border: 1px solid #2DA44E; */
   background-color: #fff;
   color: #2da44e;
 }
@@ -575,8 +604,9 @@ td {
 figcaption {
   margin-top: 50px;
   margin-left: 20px;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1rem;
+  color: #000;
 }
 
 .meal-photo {
@@ -638,6 +668,29 @@ header i {
   animation: 0.5s linear infinite spinner;
 }
 
+button span {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  left: 4px;
+  top: 3px;
+  margin-bottom: 5px;
+  background: #000;
+  transition: 0.5s;
+}
+
+.theme-switch {
+  position: absolute;
+  display: flex;
+  font-family: sans-serif;
+  justify-content: end;
+  align-items: center;
+  font-size: 14px;
+  right: 260px;
+  top: 20px;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background: #202124;
@@ -647,8 +700,294 @@ header i {
     color: #e8eaed;
   }
 
+  nav,
+  main,
+  header {
+    background: #202124;
+  }
+
+  .meal-card h5 {
+    color: #e8eaed;
+  }
+
+  figcaption {
+    color: #bdc1c6;
+  }
+
   .health-card h5 {
-    color: red;
+    color: #e8eaed;
+  }
+
+  .card-bottom .bmi {
+    color: #e8eaed;
+  }
+
+  .card-bottom .unit {
+    color: #bdc1c6;
+  }
+
+  th {
+    color: #e8eaed;
+  }
+
+  td {
+    color: #e8eaed;
+  }
+
+  .calories-card h5 {
+    color: #e8eaed;
+  }
+
+  .calories-card p {
+    color: #bdc1c6;
+  }
+
+  .calories-card span {
+    color: #e8eaed;
+  }
+
+  .card-top p {
+    color: #bdc1c6;
+  }
+
+  .card-top span {
+    font-weight: 500;
+    color: #e8eaed;
+  }
+
+  .meal-card {
+    border: 1px solid #4f5050;
+    background: #202124;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(150, 172, 156, 0);
+  }
+
+  .health-card {
+    border: 1px solid #4f5050;
+    box-shadow: 0 10px 10px rgba(150, 172, 156, 0);
+  }
+
+  .meal-card-btn button {
+    margin: 10px;
+    padding: 8px;
+    border-radius: 999px;
+    border: 1px solid #4f5050;
+    color: #bdc1c6;
+    background: #202124;
+  }
+
+  .meal-card-btn button:hover {
+    background: #35363a;
+    cursor: pointer;
+    color: #bdc1c6;
+    box-shadow: none;
+  }
+
+  .bmi-status {
+    border: 1px solid #4f5050;
+    display: flex;
+    justify-content: center;
+    background: #f6f8fa;
+    padding: 10px;
+    border-radius: 10px;
+    width: 40%;
+    margin-left: 10px;
+    box-shadow: 0 10px 10px rgba(150, 172, 156, 0);
+  }
+
+  .calories-card {
+    border: 1px solid #4f5050;
+    background: #202124;
+    box-shadow: 0 10px 10px rgba(150, 172, 156, 0);
+  }
+
+  .dropdown-content {
+    background: #202124;
+    border: 1px solid #4f5050;
+  }
+
+  .dropdown-content a {
+    color: #bdc1c6;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #35363a;
+  }
+
+  .user {
+    border-bottom: 1px solid #4f5050;
+  }
+
+  .settings-item {
+    border-bottom: 1px solid #4f5050;
+  }
+
+  .light-mode-item {
+    border-bottom: 1px solid #4f5050;
+  }
+
+  #user-icon {
+    color: #bdc1c6;
+  }
+
+  #settings-icon {
+    position: absolute;
+    color: #bdc1c6;
+    top: 59px;
+    right: 130px;
+    font-size: 18px;
+  }
+  #sun-icon {
+    color: #bdc1c6;
+  }
+
+  #logout-icon {
+    color: #bdc1c6;
+  }
+
+  nav,
+  main {
+    border: 0.1px solid #4f5050;
+    border-bottom: none;
+    margin-top: 50px;
+  }
+
+  nav {
+    border-left: none;
+    border-right: none;
+  }
+
+  header {
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    margin-bottom: 70px;
+    z-index: 4;
+    background-color: #202124;
+    height: 60px;
+    border-bottom: 0.5px solid #4f5050;
+  }
+
+  .bmi-status,
+  .calories-card,
+  .meal-card,
+  .summary,
+  .health-card,
+  .card-top,
+  .card-bottom {
+    background: #202124;
+    color: #fff;
+  }
+
+  header i {
+    position: absolute;
+    right: 207px;
+    top: 19px;
+    font-size: 28px;
+    color: #e8eaed;
+  }
+
+  .fa-house-user {
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .username {
+    position: absolute;
+    right: 0;
+    top: 18px;
+    color: white;
+    white-space: nowrap;
+    width: 119px;
+    height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.5rem;
+  }
+
+  ul i {
+    margin-right: 20px;
+    color: #bdc1c6;
+    font-size: 0.8rem;
+  }
+
+  ul li a {
+    text-decoration: none;
+    color: #bdc1c6;
+    font-size: 0.6rem;
+    padding: 10px;
+    border-radius: 999px;
+  }
+
+  ul i {
+    margin-right: 20px;
+    color: #fff;
+    font-size: 1rem;
+  }
+
+  .active,
+  ul li a:hover {
+    border-radius: 9999px;
+    box-shadow: none;
+    background: #35363a;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    width: 80%;
+  }
+
+  .delete-btn-container button {
+    border: 1px solid #4f5050;
+    color: #bdc1c6;
+    background: #202124;
+  }
+
+  .delete-btn-container button:hover {
+    background: #35363a;
+    cursor: pointer;
+    color: #bdc1c6;
+  }
+
+  .content .card {
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: none;
+    background: #202124;
+    border: 0.5px solid #4f5050;
+  }
+
+  .content .card p {
+    font-size: 0.75rem;
+    color: #bdc1c6;
+  }
+
+  .content .card h3 {
+    font-size: 0.9rem;
+    color: #e8eaed;
+  }
+
+  .vertical-line-left {
+    border: 1px solid #4f5050;
+    position: absolute;
+    height: 70%;
+    left: 190px;
+    border-left: none;
+    top: 10px;
+  }
+
+  .vertical-line-right {
+    border: 1px solid #4f5050;
+    position: absolute;
+    height: 70%;
+    right: 190px;
+    border-left: none;
+    top: 10px;
   }
 }
 
@@ -688,6 +1027,7 @@ header i {
     padding: 0;
     margin-bottom: 2px;
     width: 100%;
+    background: #fff;
   }
 
   figcaption {
@@ -745,7 +1085,6 @@ header i {
     margin: -43px 40px 10px 40px;
     height: 950px;
     width: 100%;
-    /* border: 1px solid red; */
   }
 
   .health-card {
@@ -761,9 +1100,7 @@ header i {
     align-items: center;
     justify-content: center;
     border: none;
-    /* background: #fff; */
-    background: #f6f8fa;
-
+    background: #fff;
     padding: 10px;
     border-radius: 10px;
     width: 100%;
@@ -775,6 +1112,7 @@ header i {
   .calories-card {
     width: 100%;
     margin-left: 0;
+    background: #fff;
   }
 
   nav {
@@ -787,6 +1125,7 @@ header i {
     margin-right: 5px;
     border-right: none;
     height: 1040px;
+    background: #fff;
   }
 
   body {
@@ -799,18 +1138,6 @@ header i {
     height: 100vh;
   }
 
-  ul i {
-    margin-right: 10px;
-    margin-left: 0;
-    color: #5f5d5d;
-    font-size: 1rem;
-  }
-
-  ul li {
-    margin: 0px;
-    padding: 10px;
-  }
-
   .content {
     display: flex;
     justify-content: start;
@@ -819,8 +1146,10 @@ header i {
     padding-left: 5px;
     padding-right: 5px;
     padding-bottom: 50px;
-    /* padding-top: 30px; */
-    /* border: 1px solid red; */
+  }
+
+  .content .card {
+    background: #fff;
   }
 
   .content .card p {
@@ -852,6 +1181,10 @@ header i {
     right: 97px;
     top: 22px;
     font-size: 1.3rem;
+  }
+
+  header {
+    border: none;
   }
 
   .counter {
@@ -896,6 +1229,11 @@ header i {
     font-size: 1.3rem;
   }
 
+  .footer-nav a:hover {
+    color: #2da44e;
+    cursor: pointer;
+  }
+
   .mobile-logout {
     margin-right: 30px;
   }
@@ -932,5 +1270,45 @@ header i {
     height: 40px;
     width: 40px;
     animation: skeleton-loading 1s infinite alternate;
+  }
+
+  .card-top {
+    background: #fff;
+  }
+
+  .card-bottom {
+    background: #fff;
+  }
+
+  /* ul i:hover {
+    margin-right: 20px;
+    color: #2da44e;
+    font-size: 1rem;
+  } */
+
+  .active,
+  ul li a:hover {
+    box-shadow: none;
+    background-color: #fff;
+    color: red;
+    cursor: pointer;
+    padding: 10px;
+    width: 0;
+  }
+
+  .history-icon-active i {
+    color: #2da44e;
+  }
+
+  .home-icon-active i {
+    color: #2da44e;
+  }
+
+  .home-icon-inactive i {
+    color: #5f5d5d;
+  }
+
+  .home-icon-inactive i:hover {
+    color: #2da44e;
   }
 }
