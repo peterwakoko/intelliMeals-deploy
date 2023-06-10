@@ -45,7 +45,12 @@ section {
 }
 
 nav {
-  background: rgb(63, 63, 63);
+  /* background: rgb(63, 63, 63); */
+
+  background: rgba(38, 37, 37, 0.3);
+  /* background: #faf9f9; */
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(14px);
   height: 80px;
   width: 100%;
   position: fixed;
@@ -71,15 +76,16 @@ nav ul li {
 }
 
 nav ul li a {
-  color: rgb(196, 191, 191);
+  color: #fff;
   font-size: 12px;
   padding: 7px 13px;
   border-radius: 3px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   text-decoration: none;
+  /* font-weight: 700; */
 }
 
-a.active,
+.active-link,
 a:hover {
   text-decoration: underline;
   transition: 0.5s;
@@ -209,7 +215,8 @@ a:hover {
   height: 100vh;
   padding: 60px;
   line-height: 1.5;
-  background: #f6f8fa;
+  /* background: #f6f8fa; */
+  background-color: #2da44e;
 }
 
 .meal-time-line ul {
@@ -223,7 +230,7 @@ a:hover {
 
 ul li {
   margin-top: 20px;
-  color: #2da44e;
+  color: #fff;
 }
 
 .card {
@@ -243,7 +250,9 @@ ul li {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: #f6f8fa;
+  /* background: #f6f8fa; */
+  background-color: #2da44e;
+  color: #fff;
   height: 700px;
 }
 
@@ -266,7 +275,7 @@ ul li {
 }
 
 .feature-container i {
-  color: #2da44e;
+  color: #fff;
   font-size: 1.2rem;
 }
 
@@ -279,7 +288,9 @@ ul li {
   font-size: 0.8rem;
   padding: 60px;
   line-height: 1.5;
-  background: #f6f8fa;
+  /* background: #f6f8fa; */
+  color: #fff;
+  background-color: #2da44e;
 }
 
 .feature-text p {
@@ -296,7 +307,9 @@ ul li {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #f6f8fa;
+  /* background: #f6f8fa; */
+  color: #fff;
+  background-color: #2da44e;
 }
 
 .dev-name {
@@ -371,12 +384,13 @@ footer {
 }
 
 footer small {
-  font-size: 0.6rem;
+  font-size: 0.5rem;
   margin-left: 10px;
 }
 footer i {
   color: #fff;
   margin-left: 10px;
+  font-size: 17px;
 }
 .to-top {
   background: rgb(226, 224, 224);
@@ -401,6 +415,7 @@ footer i {
   bottom: 32px;
   pointer-events: auto;
   opacity: 1;
+  text-decoration: none;
 }
 
 .to-top.active:hover {
@@ -545,7 +560,7 @@ footer i {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #f6f8fa;
+    background: #2da44e;
   }
 
   .dev-name {
