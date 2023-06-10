@@ -39,7 +39,7 @@
 
     <title>Dashboard</title>
   </head>
-  <body>
+  <body onload="onload()">
     <div class="preloader">
       <div class="header-template">
         <img
@@ -70,6 +70,7 @@
       <h4 class="title">Home</h4>
       <i class="fa-sharp fa-regular fa-bell"></i>
       <div class="counter"><span>2</span></div>
+
       <div class="vertical-line-right"></div>
       <div class="username">SIMON PETER WAKOKO</div>
 
@@ -82,9 +83,9 @@
           ><i class="fa-solid fa-gear" id="settings-icon"></i
           ><span class="setting-text">Settings</span>
         </a>
-        <a href="dashboard_darkmode.html" class="light-mode-item"
-          ><i class="fa-regular fa-moon" id="sun-icon"></i>
-          <span class="light-mode-text">Dark Mode</span>
+        <a href="#" class="theme-item" onclick="darkmode()"
+          ><i class="fa-solid fa-circle-half-stroke" id="theme-icon"></i>
+          <span class="theme-text">Theme</span>
         </a>
         <a href="index.html"
           ><i class="fa-solid fa-right-from-bracket" id="logout-icon"></i
@@ -165,7 +166,7 @@
             <table>
               <tr>
                 <th>BMI</th>
-                <th>Weight Status</th>
+                <th>Status</th>
               </tr>
               <tr>
                 <td>Below 18.5</td>
@@ -180,7 +181,7 @@
                 <td>Overweight</td>
               </tr>
               <tr>
-                <td>30.0 0r higher</td>
+                <td>30.0 OR higher</td>
                 <td>Obese</td>
               </tr>
             </table>
@@ -204,7 +205,7 @@
       </section>
     </main>
     <div class="footer-nav">
-      <a href="dashboard.html" class="active"
+      <a href="dashboard.html" class="home-icon-active"
         ><i class="fa-solid fa-house-user"></i>
       </a>
 
