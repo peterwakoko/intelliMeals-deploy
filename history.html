@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./Assets/history.css" />
+    <link rel="stylesheet" href="./Assets/dashboard.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
@@ -39,7 +39,7 @@
 
     <title>History</title>
   </head>
-  <body>
+  <body onload="onload()">
     <div class="preloader">
       <div class="header-template">
         <img
@@ -70,6 +70,7 @@
       <h4 class="title">History</h4>
       <i class="fa-sharp fa-regular fa-bell"></i>
       <div class="counter"><span>2</span></div>
+      
       <div class="vertical-line-right"></div>
       <div class="username">SIMON PETER WAKOKO</div>
 
@@ -82,9 +83,9 @@
           ><i class="fa-solid fa-gear" id="settings-icon"></i
           ><span class="setting-text">Settings</span>
         </a>
-        <a href="dashboard_darkmode.html" class="light-mode-item"
-          ><i class="fa-regular fa-moon" id="sun-icon"></i>
-          <span class="light-mode-text">Dark Mode</span>
+        <a href="#" class="theme-item" onclick="darkmode()"
+          ><i class="fa-solid fa-circle-half-stroke" id="theme-icon"></i>
+          <span class="theme-text">Theme</span>
         </a>
         <a href="index.html"
           ><i class="fa-solid fa-right-from-bracket" id="logout-icon"></i
@@ -95,25 +96,25 @@
     <nav>
       <ul>
         <li>
-          <a href="dashboard.html" class="active"
+          <a href="dashboard.html" class="btn"
             ><i class="fa-solid fa-house-user"></i
             ><span class="nav-label">Home</span>
           </a>
         </li>
         <li>
-          <a href="#"
+          <a href="#" class="btn"
             ><i class="fa-solid fa-calendar-check"></i
             ><span class="nav-label">Meal Plan</span>
           </a>
         </li>
         <li>
-          <a href="#"
+          <a href="#" class="btn active"
             ><i class="fa-solid fa-clock-rotate-left"></i
             ><span class="nav-label">History</span>
           </a>
         </li>
         <li>
-          <a href="#"
+          <a href="#" class="btn"
             ><i class="fa-solid fa-magnifying-glass-chart"></i
             ><span class="nav-label">Food Analysis</span>
           </a>
@@ -177,13 +178,13 @@
       </section>
     </main>
     <div class="footer-nav">
-      <a href="dashboard.html" class="active"
+      <a href="dashboard.html" class="home-icon-inactive"
         ><i class="fa-solid fa-house-user"></i>
       </a>
 
       <a href="#"><i class="fa-solid fa-calendar-check"></i> </a>
 
-      <a href="history.html"><i class="fa-solid fa-clock-rotate-left"></i> </a>
+      <a href="history.html" class="history-icon-active"><i class="fa-solid fa-clock-rotate-left"></i> </a>
 
       <a href="#"><i class="fa-solid fa-magnifying-glass-chart"></i> </a>
     </div>
@@ -208,6 +209,15 @@ toggle between hiding and showing the dropdown content */
           }
         }
       };
+
+       var btns = document.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
     </script>
     <script src="dashboard.js"></script>
   </body>
