@@ -57,20 +57,21 @@
     </div>
     <header>
       <a href="dashboard.html">
-      <img
-        class="logo"
-        src="./Assets/SUPA meal planner - Copy.svg"
-        alt="intelliMeals logo"
-        width="110px"
-      />
+        <img
+          class="logo"
+          src="./Assets/SUPA meal planner - Copy.svg"
+          alt="intelliMeals logo"
+          width="110px"
+        />
       </a>
-     
+
       <div class="vertical-line-left"></div>
 
       <h4 class="title">History</h4>
-      <i class="fa-sharp fa-regular fa-bell"></i>
+      <a href="message.html" class="bell-icon">
+<i class="fa-sharp fa-regular fa-bell"></i>
       <div class="counter"><span>2</span></div>
-      
+      </a>
       <div class="vertical-line-right"></div>
       <div class="username">SIMON PETER WAKOKO</div>
 
@@ -102,7 +103,7 @@
           </a>
         </li>
         <li>
-          <a href="#" class="btn"
+          <a href="mealPlan.html" class="btn"
             ><i class="fa-solid fa-calendar-check"></i
             ><span class="nav-label">Meal Plan</span>
           </a>
@@ -114,9 +115,20 @@
           </a>
         </li>
         <li>
-          <a href="#" class="btn"
+          <a href="foodAnalysis.html" class="btn"
             ><i class="fa-solid fa-magnifying-glass-chart"></i
             ><span class="nav-label">Food Analysis</span>
+          </a>
+        </li>
+        <li>
+          <a href="preferredMeal.html" class="btn"
+            ><i class="fa-solid fa-heart"></i
+            ><span class="nav-label">Preferred Meal</span>
+          </a>
+        </li>
+        <li>
+          <a href="message.html" class="btn"
+            ><i class="fa-solid fa-message"></i><span class="nav-label">Messages</span>
           </a>
         </li>
       </ul>
@@ -124,52 +136,66 @@
     <main>
       <section class="content">
         <div class="card">
-          <div><h3>Breakfast</h3></div>
-          <div class="card-sub-content">
+          <div class="left-side">
+            <h5>Breakfast</h5>
             <p>Matooke and Greens</p>
-            <p>February 17,8:00 AM</p>
+          </div>
+          <div class="right-side">
+            <p>February 17,8:00 AM <i class="fa-solid fa-trash-can"></i></p>
           </div>
         </div>
         <div class="card">
-          <div><h3>Lunch</h2></div>
-          <div class="card-sub-content">
+          <div class="left-side">
+            <h5>Breakfast</h5>
             <p>Matooke and Greens</p>
-            <p>February 17,1:00 PM</p>
+          </div>
+          <div class="right-side">
+            <p>February 17,8:00 AM <i class="fa-solid fa-trash-can"></i></p>
           </div>
         </div>
         <div class="card">
-          <div><h3>Supper</h3></div>
-          <div class="card-sub-content">
+          <div class="left-side">
+            <h5>Breakfast</h5>
             <p>Matooke and Greens</p>
-            <p>February 17,1:00 PM</p>
+          </div>
+          <div class="right-side">
+            <p>February 17,8:00 AM <i class="fa-solid fa-trash-can"></i></p>
           </div>
         </div>
         <div class="card">
-          <div><h3>Breakfast</h3></div>
-          <div class="card-sub-content">
+          <div class="left-side">
+            <h5>Breakfast</h5>
             <p>Matooke and Greens</p>
-            <p>February 17,1:00 PM</p>
+          </div>
+          <div class="right-side">
+            <p>February 17,8:00 AM <i class="fa-solid fa-trash-can"></i></p>
           </div>
         </div>
         <div class="card">
-          <div><h3>Lunch</h3></div>
-          <div class="card-sub-content">
+          <div class="left-side">
+            <h5>Breakfast</h5>
             <p>Matooke and Greens</p>
-            <p>February 17,1:00 PM</p>
+          </div>
+          <div class="right-side">
+            <p>February 17,8:00 AM <i class="fa-solid fa-trash-can"></i></p>
           </div>
         </div>
         <div class="card">
-          <div><h3>Supper</h3></div>
-          <div class="card-sub-content">
+          <div class="left-side">
+            <h5>Breakfast</h5>
             <p>Matooke and Greens</p>
-            <p>February 17,1:00 PM</p>
+          </div>
+          <div class="right-side">
+            <p>February 17,8:00 AM <i class="fa-solid fa-trash-can"></i></p>
           </div>
         </div>
         <div class="card">
-          <div><h3>Breakfast</h3></div>
-          <div class="card-sub-content">
+          <div class="left-side">
+            <h5>Breakfast</h5>
             <p>Matooke and Greens</p>
-            <p>February 17,1:00 PM</p>
+          </div>
+          <div class="right-side">
+            <p>February 17,8:00 AM <i class="fa-solid fa-trash-can"></i></p>
           </div>
         </div>
         <div class="delete-btn-container">
@@ -184,7 +210,9 @@
 
       <a href="#"><i class="fa-solid fa-calendar-check"></i> </a>
 
-      <a href="history.html" class="history-icon-active"><i class="fa-solid fa-clock-rotate-left"></i> </a>
+      <a href="history.html" class="history-icon-active"
+        ><i class="fa-solid fa-clock-rotate-left"></i>
+      </a>
 
       <a href="#"><i class="fa-solid fa-magnifying-glass-chart"></i> </a>
     </div>
@@ -210,7 +238,7 @@ toggle between hiding and showing the dropdown content */
         }
       };
 
-       var btns = document.getElementsByClassName("btn");
+      var btns = document.getElementsByClassName("btn");
       for (var i = 0; i < btns.length; i++) {
         btns[i].addEventListener("click", function () {
           var current = document.getElementsByClassName("active");
