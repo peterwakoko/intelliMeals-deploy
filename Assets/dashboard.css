@@ -199,13 +199,13 @@ main {
 
 /* meal plan css */
 
-.meal-plan-main{
+.meal-plan-main {
   grid-area: content;
   height: 98vh;
   border-right: none;
   margin-top: 60px;
   border-top: none;
-  background:#F6F8FA;
+  background: #F6F8FA;
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(14px);
 }
@@ -214,7 +214,7 @@ main {
   padding: 20px 0px;
   background-color: #F6F8FA;
   border: none;
-  
+
 }
 
 .week-days {
@@ -231,26 +231,26 @@ main {
   margin-right: 40px;
   padding: 16px;
   border-radius: 10px;
-  
+
 }
 
-.week-days a{
+.week-days a {
   flex-basis: calc(100% / 6);
   text-align: center;
   padding: 2px;
 }
 
 .week-days .week-btn {
-border-radius: 30px;
-margin: 2px 2px;
-background: none;
-color: #2da44e;
-border: none;
-font-size: 14px;
-cursor: pointer;
-font-weight: 400;
-padding: 3px 22px;
-border-radius: 30px;
+  border-radius: 30px;
+  margin: 2px 2px;
+  background: none;
+  color: #2da44e;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 400;
+  padding: 3px 22px;
+  border-radius: 30px;
 }
 
 .week-days .active-week-btn {
@@ -265,7 +265,7 @@ border-radius: 30px;
   font-size: 14px;
   cursor: pointer;
   font-weight: 400;
-    
+
 }
 
 .week-days .week-btn:hover {
@@ -392,7 +392,8 @@ border-radius: 30px;
   background-color: #fff;
   color: #2DA44E;
 }
-.breakfast-buttons .btn:active{
+
+.breakfast-buttons .btn:active {
   box-shadow: 0px 0px 5px #2DA44E;
   /* border: 1px solid #2DA44E; */
   background-color: #fff;
@@ -406,7 +407,7 @@ border-radius: 30px;
   background: #fff;
   margin-left: 10px;
   margin-right: 10px;
-} 
+}
 
 .Lunch img,
 .Lunch .Lunch-text,
@@ -491,7 +492,8 @@ border-radius: 30px;
   background-color: #fff;
   color: #2DA44E;
 }
-.Lunch-buttons .btn:active{
+
+.Lunch-buttons .btn:active {
   box-shadow: 0px 0px 5px #2DA44E;
   /* border: 1px solid #2DA44E; */
   background-color: #fff;
@@ -506,7 +508,7 @@ border-radius: 30px;
   background: #fff;
   margin-left: 10px;
   margin-right: 10px;
-} 
+}
 
 .supper img,
 .supper .supper-text,
@@ -591,7 +593,8 @@ border-radius: 30px;
   background-color: #fff;
   color: #2DA44E;
 }
-.supper-buttons .btn:active{
+
+.supper-buttons .btn:active {
   box-shadow: 0px 0px 5px #2DA44E;
   /* border: 1px solid #2DA44E; */
   background-color: #fff;
@@ -626,7 +629,7 @@ border-radius: 30px;
 
 .home-meal-text {
   margin: auto;
- 
+
 }
 
 .home-meal-text p {
@@ -666,12 +669,14 @@ border-radius: 30px;
   background-color: #fff;
   color: #2DA44E;
 }
-.home-meal-buttons .btn:active{
+
+.home-meal-buttons .btn:active {
   box-shadow: 0px 0px 5px #2DA44E;
   /* border: 1px solid #2DA44E; */
   background-color: #fff;
   color: #2DA44E;
 }
+
 /* 
 
 .content {
@@ -720,13 +725,13 @@ border-radius: 30px;
   border-bottom: 1px solid #CCCCCC;
 } */
 
-.meal-plan-btn-container{
+.meal-plan-btn-container {
   display: flex;
   flex-direction: column;
   margin-right: 15px;
 }
 
-.meal-plan-btn-container button{
+.meal-plan-btn-container button {
   background-color: #2DA44E;
   border: none;
   border-radius: 30px;
@@ -834,7 +839,7 @@ input[type="search"] {
   border-radius: 10px;
 } */
 
-.left-side h5{
+.left-side h5 {
   font-size: 20px;
   font-weight: 600;
 }
@@ -915,15 +920,15 @@ p {
   margin-right: 10px;
   border-bottom: 1px solid #CCCCCC;
   /* box-shadow: 0 10px 10px rgba(150, 172, 156, 0.2); */
-  /* border-bottom: 1px solid #ccc; */
+/* border-bottom: 1px solid #ccc; */
 
 
-.food-category p{
+.food-category p {
   width: 400px;
   font-weight: 600;
 }
 
-.food-category span{
+.food-category span {
   border: 1px solid #2da44e;
   padding: 3px;
   border-radius: 30px;
@@ -933,13 +938,13 @@ p {
   font-weight: 500;
 }
 
-.food-category span:hover{
+.food-category span:hover {
   box-shadow: 0px 0px 5px #2DA44E;
   background-color: #2DA44E;
   color: #fff;
 }
 
-.food-category .food-list{
+.food-category .food-list {
   font-size: 0.8rem;
   font-weight: 500;
   padding-top: 8px;
@@ -956,8 +961,8 @@ p {
   margin-right: 60px;
 }
 
-.supper-photo{
-   width: 100px;
+.supper-photo {
+  width: 100px;
   height: 100px;
   background-image: url(./food-min.jpeg);
   background-position: center;
@@ -967,8 +972,8 @@ p {
   margin-right: 60px;
 }
 
-.lunch-photo{
-   width: 100px;
+.lunch-photo {
+  width: 100px;
   height: 100px;
   background-image: url(./food2.jpeg);
   background-position: center;
@@ -976,9 +981,9 @@ p {
   border-radius: 100%;
   margin: 20px;
   margin-right: 60px;
-} */
+}
 
-.card-date p{
+*/ .card-date p {
   margin-right: 20px;
 }
 
@@ -987,12 +992,12 @@ p {
   color: #2da44e;
 }
 
-.bell-icon{
-text-decoration: none;
-color: #000;
+.bell-icon {
+  text-decoration: none;
+  color: #000;
 }
 
-.bell-icon:hover{
+.bell-icon:hover {
   color: #2da44e;
 }
 
@@ -1003,34 +1008,64 @@ ul {
   margin-top: 30px;
 }
 
-ul li {
-  margin-bottom: 50px;
+ul a {
+  margin-bottom: 20px;
+  /* padding: 4px; */
 }
 
-ul li a {
+ul a li {
   text-decoration: none;
   color: #000;
   font-size: 0.6rem;
   padding: 10px;
-  border-radius: 999px;
+  height: 50px;
+  /* border-radius: 999px; */
+}
+
+
+a.btn {
+  border-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+  /* box-shadow: 0px 0px 5px #2da44e; */
+  background-color: #fff;
+  text-decoration: none;
+  color: #2da44e;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  width: 90%;
 }
 
 ul i {
-  margin-right: 20px;
+  margin-right: 10px;
   color: #2da44e;
   font-size: 1rem;
 }
 
-.active,
-ul li a:hover {
+a.btn:hover {
   border-radius: 9999px;
+  /* border-bottom-left-radius: 9999px; */
   box-shadow: 0px 0px 5px #2da44e;
   background-color: #fff;
   color: #2da44e;
   cursor: pointer;
-  padding: 10px;
-  width: 80%;
+  padding: 4px;
+  display: flex;
+  width: 90%;
 }
+
+a.btn.active {
+  border-radius: 9999px;
+  /* border-bottom-left-radius: 9999px; */
+  box-shadow: 0px 0px 5px #2da44e;
+  background-color: #fff;
+  color: #2da44e;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  width: 90%;
+}
+
 
 .profile-image {
   border-radius: 50%;
@@ -1316,6 +1351,7 @@ th {
   text-align: center;
   color: #000;
 }
+
 td {
   padding: 12px;
   font-size: 0.6rem;
@@ -1343,13 +1379,13 @@ td {
   box-shadow: 0 10px 10px rgba(45, 164, 78, 0.2);
 }
 
-.meal-card .info{
-background-color: #fff;
-padding: 10px;
-font-size: 14px;
-border-radius: 10px;
-box-shadow: 0 10px 10px rgba(45, 164, 78, 0.2);
-margin-bottom: 10px;
+.meal-card .info {
+  background-color: #fff;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px rgba(45, 164, 78, 0.2);
+  margin-bottom: 10px;
 }
 
 .meal-card-btn {
@@ -1477,6 +1513,7 @@ button span {
   0% {
     transform: translate3d(-50%, -50%, 0) rotate(0deg);
   }
+
   100% {
     transform: translate3d(-50%, -50%, 0) rotate(360deg);
   }
@@ -1486,6 +1523,7 @@ button span {
   .meal-card-btn-set2 {
     display: none;
   }
+
   .figcaption-set2 {
     display: none;
   }
@@ -1494,10 +1532,12 @@ button span {
     display: none;
   }
 }
+
 @media only screen and (max-width: 908px) {
   .nav-label {
     display: none;
   }
+
   .figcaption-set2 {
     font-size: 0.7rem;
     padding: 10px;
@@ -1536,6 +1576,7 @@ button span {
     display: block;
     margin: 10px;
   }
+
   .meal-card-btn-set2 button {
     border-radius: 999px;
     padding: 5px;
@@ -1769,10 +1810,9 @@ button span {
   } */
 
   .active,
-  ul li a:hover {
+  ul a li:hover {
     box-shadow: none;
-    background-color: #fff;
-    color: red;
+    background-color: #692626;
     cursor: pointer;
     padding: 10px;
     width: 0;
