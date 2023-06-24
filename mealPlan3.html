@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+    
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
-
+    <link rel="stylesheet" href="./Assets/mealplan.css" />
     <link rel="icon" href="./Assets/SUPA meal planner - Copy.svg" />
     <link
       rel="stylesheet"
@@ -130,114 +131,110 @@
         </li>
       </ul>
     </nav>
-    <main>
-      <section class="meal-plan-content">
-        <div class="card">
-            <a href="mealPlan.html"><button class="week-btn">Monday</button></a>
+    <main class="meal-plan-main">
+        <section>
+            <div class="content">
+                <div class="week-days">
+                    <a href="mealPlan.html"><button class="week-btn">Monday</button></a>
             <a href="mealPlan2.html"><button class="week-btn">Tuesday</button></a>
-            <a href="mealPlan3.html"><button class="active week-btn">Wednesday</button></a>
+            <a href="mealPlan3.html"><button class="active-week-btn">Wednesday</button></a>
             <a href="mealPlan4.html"><button class="week-btn">Thursday</button></a>
             <a href="mealPlan5.html"><button class="week-btn">Friday</button></a>
             <a href="mealPlan6.html"><button class="week-btn">Saturday</button></a>
             <a href="mealPlan7.html"><button class="week-btn">Sunday</button></a>
-          </div>
-        <div class="card-date">
-          <div class="left-side">
-            <h5>Today's Meals</h5>
-          </div>
-          <div class="right-side">
-            <p>13th June,2023</p>
-          </div>
-          </div>
+                    
+                </div>
+                <div class="meals-today">
+                    <p>Today's Meals<span>16th April, 2023</span></p>
+                    <div class="breakfast" style="border-top: 1px solid #CCCCCC;">
+                        <img src="./Assets/breakfast.jpeg">
+                        <div class="breakfast-text">
+                            <p>Breakfast<span>250gl</span></p>
+                            <p class="breakfast-text-2">Brown Coffee,Bread and Eggs</p>
+                        </div>
+                        <div class="breakfast-buttons">
+                            <button class="btn">About Food</button>
+                            <button class="btn">Change</button>
+                        </div>
+                    </div>
+                    <div class="Lunch">
+                        <img src="./Assets/food2.jpeg">
+                        <div class="Lunch-text">
+                            <p>Lunch<span>250gl</span></p>
+                            <p class="Lunch-text-2">Rice,Beans and Greens</p>
+                        </div>
+                        <div class="Lunch-buttons">
+                            <button class="btn">About Food</button>
+                            <button class="btn">Change</button>
+                        </div>
 
-          <div class="food-category">
-          <div class="breakfast-photo"></div>
-          <div>
-            <p>Breakfast <span>250 cal</span></p>
-          <p class="food-list">Brown coffee, Bread and Eggs</p>
-        </div>
-          <div class="meal-plan-btn-container">
-            <button>About food</button>
-          <button>Change</button></div>
-          </div>
-
-          <div class="food-category">
-          <div class="lunch-photo"></div>
-          <div>
-          <p>Lunch <span>250 cal</span></p>
-          <p class="food-list">Rice, Beans and Greens</p>
-        </div>
-          <div class="meal-plan-btn-container">
-            <button>About food</button>
-          <button>Change</button></div>
-          </div>
-
-          <div class="food-category">
-          <div class="supper-photo"></div>
-          <div>
-            <p>Supper <span>250 cal</span></p>
-          <p class="food-list">Matooke and Meat</p>
-        </div>
-          <div class="meal-plan-btn-container">
-            <button>About food</button>
-          <button>Change</button></div>
-          </div>
-
-          
-        </div>
-      </section>
+                    </div>
+                    <div class="supper">
+                        <img src="./Assets/food-min.jpeg">
+                        <div class="supper-text">
+                            <p>Supper<span>250gl</span></p>
+                            <p class="supper-text-2">Matooke and Meat</p>
+                        </div>
+                        <div class="supper-buttons">
+                            <button class="btn">About Food</button>
+                            <button class="btn">Change</button>
+                        </div>
+                    </div>
+                </div>
+        </section>
     </main>
     <div class="footer-nav">
-      <a href="dashboard.html" class="home-icon-inactive"
-        ><i class="fa-solid fa-house-user"></i>
-      </a>
-
-      <a href="#"><i class="fa-solid fa-calendar-check"></i> </a>
-
-      <a href="history.html" class="history-icon-active"><i class="fa-solid fa-clock-rotate-left"></i> </a>
-
-      <a href="#"><i class="fa-solid fa-magnifying-glass-chart"></i> </a>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script>
-      /* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-      function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-      }
-
-      // Close the dropdown if the user clicks outside of it
-      window.onclick = function (event) {
-        if (!event.target.matches(".profile-image")) {
-          var dropdowns = document.getElementsByClassName("dropdown-content");
-          var i;
-          for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains("show")) {
-              openDropdown.classList.remove("show");
+        <a href="dashboard.html" class="home-icon-inactive"
+          ><i class="fa-solid fa-house-user"></i>
+        </a>
+  
+        <a href="#"><i class="fa-solid fa-calendar-check"></i> </a>
+  
+        <a href="history.html" class="history-icon-active"><i class="fa-solid fa-clock-rotate-left"></i> </a>
+  
+        <a href="#"><i class="fa-solid fa-magnifying-glass-chart"></i> </a>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <script>
+        /* When the user clicks on the button,
+  toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+  
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (event) {
+          if (!event.target.matches(".profile-image")) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains("show")) {
+                openDropdown.classList.remove("show");
+              }
             }
           }
+        };
+  
+         var btns = document.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function () {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+          });
         }
-      };
-
-       var btns = document.getElementsByClassName("btn");
-      for (var i = 0; i < btns.length; i++) {
-        btns[i].addEventListener("click", function () {
-          var current = document.getElementsByClassName("active");
-          current[0].className = current[0].className.replace(" active", "");
-          this.className += " active";
-        });
-      }
-
-       var meal_btns = document.getElementsByClassName("week-btn");
-      for (var j = 0; j < meal_btns.length; j++) {
-        meal_btns[j].addEventListener("click", function () {
-          var recent = document.getElementsByClassName("active");
-          recent[0].className = recent[0].className.replace(" active", "");
-          this.className += " active";
-        });
-      }
-    </script>
-    <script src="dashboard.js"></script>
-  </body>
-</html>
+  
+         var meal_btns = document.getElementsByClassName("week-btn");
+        for (var j = 0; j < meal_btns.length; j++) {
+          meal_btns[j].addEventListener("click", function () {
+            var recent = document.getElementsByClassName("active");
+            recent[0].className = recent[0].className.replace(" active", "");
+            this.className += " active";
+          });
+        }
+      </script>
+      <script src="dashboard.js"></script>
+    </body>
+  </html>
+  
