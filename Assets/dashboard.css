@@ -76,11 +76,10 @@ body {
 }
 
 .meal-card h5 {
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 1.5rem;
+  font-weight: 570;
   color: #000;
   text-align: center;
-
 }
 
 .card-sub-content {
@@ -164,7 +163,7 @@ header {
   justify-content: center;
   position: fixed;
   z-index: 4;
-  height: 60px;
+  height: 70px;
   background: rgba(250, 249, 249, 0.6);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(14px);
@@ -610,21 +609,19 @@ main {
 .home-meal {
   display: inline-block;
   vertical-align: middle;
-  padding: 0px 20px 20px 10px;
 }
 
 .home-meal img {
-  width: 230px;
-  height: 180px;
-  border-radius: 30px;
+  border-radius: 10%;
   opacity: 0.85;
-
+  height: 50%;
+  width: 25%;
 }
 
 .home-meal {
   display: flex;
   justify-content: space-between;
-  padding: auto;
+  padding: 4px;
 }
 
 .home-meal-text {
@@ -637,7 +634,7 @@ main {
 }
 
 .home-meal-text .home-meal-text-2 {
-  font-size: 18px;
+  font-size: 25px;
   font-weight: 500;
 }
 
@@ -1411,7 +1408,7 @@ td {
 } */
 
 .meal-container-inner {
-  display: flex;
+  /* display: flex; */
   justify-content: space-around;
 }
 
