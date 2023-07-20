@@ -43,17 +43,19 @@ body {
   grid-template-columns: 1fr 4fr;
   width: 100%;
   height: 100vh;
+  background: #202124;
 }
 
 .title {
   margin-top: 15px;
   font-size: 0.9rem;
   font-weight: 500;
+  color: #e8eaed;
 }
 
 .active {
-  font-weight: 600;
-  color: #000;
+  font-weight: 500;
+  color: #bdc1c6;
 }
 
 .meal-card h5 {
@@ -65,7 +67,7 @@ body {
 
 nav,
 main {
-  border: 0.5px solid #f0efef;
+  border: 0.1px solid #4f5050;
   border-bottom: none;
   margin-top: 50px;
 }
@@ -75,18 +77,19 @@ header {
   display: flex;
   justify-content: center;
   position: fixed;
-  z-index: 4;
-  height: 60px;
-  background-color: #fff;
   width: 100%;
   margin-bottom: 70px;
-  border-bottom: 0.5px solid #f0efef;
+  z-index: 4;
+  background-color: #202124;
+  height: 60px;
+  border-bottom: 0.5px solid #4f5050;
 }
 
 nav {
   grid-area: navbar;
   height: 100vh;
   border-right: none;
+  border-left: none;
   position: fixed;
   width: 20%;
 }
@@ -95,10 +98,13 @@ main {
   grid-area: content;
   height: 100vh;
   border-right: none;
+  margin-top: 60px;
+  border-top: none;
 }
+
 .fa-house-user {
   font-weight: bold;
-  color: #000;
+  color: #bdc1c6;
 }
 
 ul {
@@ -114,7 +120,7 @@ ul li {
 
 ul li a {
   text-decoration: none;
-  color: #363636;
+  color: #bdc1c6;
   font-size: 0.6rem;
   padding: 10px;
   border-radius: 999px;
@@ -122,12 +128,12 @@ ul li a {
 
 ul i {
   margin-right: 20px;
-  color: #5f5d5d;
+  color: #bdc1c6;
   font-size: 0.8rem;
 }
 
 ul li a:hover {
-  background: #e0e7ee;
+  background: #35363a;
   border-radius: 9999px;
   cursor: default;
   padding: 10px;
@@ -153,6 +159,7 @@ ul li a:hover {
   position: absolute;
   right: 0;
   top: 18px;
+  color: white;
   white-space: nowrap;
   width: 119px;
   height: 30px;
@@ -163,7 +170,7 @@ ul li a:hover {
 
 #settings-icon {
   position: absolute;
-  color: #5f5d5d;
+  color: #bdc1c6;
   top: 59px;
   right: 130px;
   font-size: 18px;
@@ -179,7 +186,7 @@ ul li a:hover {
 
 #user-icon {
   position: absolute;
-  color: #5f5d5d;
+  color: #bdc1c6;
   top: 11px;
   right: 130px;
   font-size: 18px;
@@ -187,7 +194,7 @@ ul li a:hover {
 
 #sun-icon {
   position: absolute;
-  color: #5f5d5d;
+  color: #bdc1c6;
   top: 104px;
   right: 130px;
   font-size: 18px;
@@ -195,7 +202,7 @@ ul li a:hover {
 
 #logout-icon {
   position: absolute;
-  color: #5f5d5d;
+  color: #bdc1c6;
   top: 151px;
   right: 130px;
   font-size: 18px;
@@ -204,7 +211,7 @@ ul li a:hover {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #fff;
+  background-color: #202124;
   min-width: 160px;
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -216,7 +223,7 @@ ul li a:hover {
 }
 
 .dropdown-content a {
-  color: #000;
+  color: #bdc1c6;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -227,19 +234,19 @@ ul li a:hover {
 }
 
 .dropdown-content a:hover {
-  background: #e0e7ee;
+  background-color: #35363a;
 }
 
 .user {
-  border-bottom: 1px solid #d6d4d4;
+  border-bottom: 1px solid #4f5050;
 }
 
 .settings-item {
-  border-bottom: 1px solid #d6d4d4;
+  border-bottom: 1px solid #4f5050;
 }
 
 .light-mode-item {
-  border-bottom: 1px solid #d6d4d4;
+  border-bottom: 1px solid #4f5050;
 }
 
 .show {
@@ -355,7 +362,7 @@ main section {
   /* justify-content: center; */
   flex-direction: column;
   border: none;
-  background: #fff;
+  background: #202124;
   margin-left: 40px;
   margin-right: 40px;
   padding: 10px;
@@ -373,24 +380,31 @@ main section {
 
 .content .card p {
   font-size: 0.75rem;
+  color: #bdc1c6;
 }
 
 .content .card h3 {
   font-size: 0.9rem;
+  color: #e8eaed;
 }
 
 .content button {
   position: absolute;
   padding: 10px;
-  background: #2da44e;
+  color: #bdc1c6;
+  border: 1px solid #4f5050;
   border-radius: 999px;
   width: 100px;
-  border: none;
   outline: none;
   right: 10px;
-  /* bottom: 15px; */
-  color: #fff;
+  bottom: 15px;
+  background: #202124;
   margin-top: 10px;
+}
+
+.content button:hover {
+  background: #35363a;
+  cursor: pointer;
 }
 
 .content i {
@@ -404,7 +418,7 @@ main section {
 }
 
 .vertical-line-left {
-  border: 0.5px solid #e4e2e2;
+  border: 1px solid #4f5050;
   position: absolute;
   height: 70%;
   left: 190px;
@@ -413,7 +427,7 @@ main section {
 }
 
 .vertical-line-right {
-  border: 0.5px solid #e4e2e2;
+  border: 1px solid #4f5050;
   position: absolute;
   height: 70%;
   right: 190px;
@@ -426,6 +440,7 @@ header i {
   right: 207px;
   top: 19px;
   font-size: 28px;
+  color: #e8eaed;
 }
 
 .preloader {
@@ -509,6 +524,25 @@ header i {
     padding: 10px;
   }
 
+  .content {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 1245px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 50px;
+    /* padding-top: 30px; */
+  }
+
+  .content .card p {
+    font-size: 0.63rem;
+  }
+
+  .content .card h3 {
+    font-size: 0.7 rem;
+  }
+
   .logo {
     position: absolute;
     left: 3px;
@@ -517,7 +551,7 @@ header i {
   }
 
   .vertical-line-left {
-    border: 1px solid #f5f5f5;
+    border: 1px solid #4f5050;
     position: absolute;
     height: 70%;
     left: 120px;
@@ -545,40 +579,6 @@ header i {
     right: 98px;
     font-size: 13px;
     top: 12px;
-  }
-
-  .content button {
-    position: absolute;
-    padding: 10px;
-    background: #2da44e;
-    border-radius: 999px;
-    width: 100px;
-    border: none;
-    outline: none;
-    right: 1px;
-    /* bottom: 127px; */
-    color: #fff;
-    margin-top: 10px;
-  }
-
-  .content {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    height: 100vh;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 50px;
-    /* padding-top: -120px; */
-    /* border: 1px solid red; */
-  }
-
-  .content .card p {
-    font-size: 0.63rem;
-  }
-
-  .content .card h3 {
-    font-size: 0.7 rem;
   }
 
   .title {
