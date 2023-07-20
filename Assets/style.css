@@ -109,9 +109,9 @@ a:hover {
   position: absolute;
   top: 210px;
   color: #fff;
-  margin-left: 100px;
+  margin-left: 30px;
   letter-spacing: 2px;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   padding: 20px;
   font-weight: 900;
 }
@@ -126,6 +126,7 @@ a:hover {
   padding: 10px;
   margin-top: -20px;
   font-size: 1.2rem;
+  margin-right: 30px;
 }
 
 .about {
@@ -145,13 +146,17 @@ a:hover {
   justify-content: center;
   flex-direction: column;
   width: 50%;
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
   height: 100vh;
   font-size: 0.8rem;
   background-color: #2da44e;
   color: #fff;
   padding: 60px;
   line-height: 1.5;
+}
+
+.about-text h1{
+  font-size: 2rem;
 }
 
 .about-text p {
@@ -182,6 +187,10 @@ a:hover {
 
 .about-text2 p {
   padding: 10px;
+}
+
+.about-text2 h1{
+  font-size: 2rem;
 }
 
 .about-img {
@@ -216,17 +225,25 @@ a:hover {
   height: 100vh;
   padding: 60px;
   line-height: 1.5;
-  /* background: #f6f8fa; */
-  background-color: #2da44e;
+  background: #f6f8fa;
+  /* margin-top: 20px; */
 }
 
 .meal-time-line ul {
   margin-left: 21px;
+
 }
 
 .time-line-inner {
   height: 100vh;
   border-left: 1px solid #ccc;
+padding-top: 22px;
+}
+
+.time-line-inner ul li{
+color: #2da44e;
+
+margin-bottom: 50px;
 }
 
 ul a {
@@ -251,10 +268,14 @@ ul a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* background: #f6f8fa; */
-  background-color: #2da44e;
-  color: #fff;
+  background: #f6f8fa;
+  /* background-color: #2da44e; */
+  color: #2da44e;
   height: 700px;
+}
+
+.features h1{
+  font-size: 2rem;
 }
 
 .feature-container {
@@ -276,8 +297,8 @@ ul a {
 }
 
 .feature-container i {
-  color: #fff;
-  font-size: 1.2rem;
+  color: #2da44e;
+  font-size: 2.5rem;
 }
 
 .feature-text {
@@ -301,6 +322,10 @@ ul a {
   padding-bottom: 15px;
 }
 
+.feature-text h1{
+  font-size: 2rem;
+}
+
 .dev-team {
   width: 100%;
   height: 100vh;
@@ -315,6 +340,10 @@ ul a {
 
 .dev-name {
   font-weight: 600;
+}
+
+.dev-team h1{
+  font-size: 2rem;
 }
 
 .dev-team p {
@@ -380,8 +409,8 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: #2da44e;
-  color: #fff;
+  background-color: #f6f8fa;
+  color: #2da44e;
 }
 
 footer small {
@@ -390,7 +419,7 @@ footer small {
 }
 
 footer i {
-  color: #fff;
+  color: #2da44e;
   margin-left: 10px;
   font-size: 17px;
 }
